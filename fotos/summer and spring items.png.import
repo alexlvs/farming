@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bw4rjubmt2dsf"
-path="res://.godot/imported/summer tilemap.png-ad0a7a0c27edd27cdccceaee4018c135.ctex"
+uid="uid://67n51h5nghvm"
+path="res://.godot/imported/summer and spring items.png-f818d5cee2b3f10e53fdd0925ae43644.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://summer tilemap.png"
-dest_files=["res://.godot/imported/summer tilemap.png-ad0a7a0c27edd27cdccceaee4018c135.ctex"]
+source_file="res://fotos/summer and spring items.png"
+dest_files=["res://.godot/imported/summer and spring items.png-f818d5cee2b3f10e53fdd0925ae43644.ctex"]
 
 [params]
 

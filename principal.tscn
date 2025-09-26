@@ -5,3 +5,4 @@
 [node name="Principal" type="Node2D"]
 
 [node name="cenário_grama" parent="." instance=ExtResource("1_tr6oq")]
+position = Vector2(-58, -17)
