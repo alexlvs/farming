@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1xue3f2xl8ub"]
+
+[ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
+
+[node name="Principal" type="Node2D"]
+
+[node name="cenário_grama" parent="." instance=ExtResource("1_tr6oq")]
