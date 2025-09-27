@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://djovsm8xk06dv"]
+
+[ext_resource type="Texture2D" uid="uid://cw6jd5cpl8ta2" path="res://fotos/walk and idle.png" id="1_uaowx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q8gsj"]
+atlas = ExtResource("1_uaowx")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3q1o"]
+atlas = ExtResource("1_uaowx")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngogl"]
+atlas = ExtResource("1_uaowx")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bukli"]
+atlas = ExtResource("1_uaowx")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_32mkf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q8gsj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g3q1o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ngogl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bukli")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 5.0
+}]
+
+[node name="fazendeiro" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(797, 345)
+sprite_frames = SubResource("SpriteFrames_32mkf")
+animation = &"parado"
+frame = 2
+frame_progress = 0.78431827
