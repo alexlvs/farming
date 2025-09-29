@@ -13,7 +13,7 @@ LINK DEFINIÇÃO DOPROJETO();
 - O jogador planta sementes, cuida das plantas e colhe alimentos. Isso mostra o ciclo básico da agricultura, essencial para acabar com a fome.
 - As moedas obtidas podem ser usadas para comprar sementes de alimentos nutritivos(frutas, legumes, grãoes) em vez de apenas pantas genéricas.
 
-# REQUISITOS link();
+# REQUISITOS link(https://docs.google.com/document/d/1c08Crlcs61BK9z0SJDSyX5ASluT9DHQlgOhTPDMDVrs/edit?usp=sharing);
 
 # DiAGRAMAS DE CASOS DE USO 
 LINK();
@@ -24,3 +24,5 @@ LINK();
 # PLANO PARA ESPECIFICAÇÃO FORMAL
 LINK();
 
+# APRESENTAÇÃO
+LINK(https://www.canva.com/design/DAG0W8bQ8Mo/i2dJ0e48gpE_VrCjdFPCEw/edit?utm_content=DAG0W8bQ8Mo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);
