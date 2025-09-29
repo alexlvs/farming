@@ -9,6 +9,7 @@ LINK DEFINIÇÃO DOPROJETO();
 
 # ODS - 2 FOME ZERO E AGRICULTURA SUSTENTÁVEL
 - No começo, o jogador planta para sobreviver.
+- O jogador planta a semente e tem que esperar ela crescer para poder colher, mostra que a agricultura é um ciclo e precisa ser respeitado.
 - O jogador planta sementes, cuida das plantas e colhe alimentos. Isso mostra o ciclo básico da agricultura, essencial para acabar com a fome.
 - As moedas obtidas podem ser usadas para comprar sementes de alimentos nutritivos(frutas, legumes, grãoes) em vez de apenas pantas genéricas.
 
