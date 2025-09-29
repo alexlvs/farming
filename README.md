@@ -5,7 +5,6 @@ O presente trabalho apresenta o desenvolvimento de um jogo digital de simulaçã
 projeto tem como objetivo proporcionar ao jogador uma experiência lúdica e interativa de cultivo, colheita e gerenciamento de recursos em um 
 ambiente virtual simples, reforçando conceitos de planejamento, organização e tomada de decisão. 
 
-LINK DEFINIÇÃO DOPROJETO();
 
 # ODS - 2 FOME ZERO E AGRICULTURA SUSTENTÁVEL e  ODS 15 – VIDA TERRESTRE
 - No começo, o jogador planta para sobreviver.
