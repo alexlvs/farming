@@ -1,4 +1,4 @@
-# PLANTOU COLHEU
+# TERRAS VERDES
 Métodos Formais de Engenharia de Software
 
 O presente trabalho apresenta o desenvolvimento de um jogo digital de simulação agrícola, construído com o motor de jogos Godot Engine. O 
