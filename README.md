@@ -16,10 +16,10 @@ LINK DEFINIÇÃO DOPROJETO();
 # REQUISITOS link(https://docs.google.com/document/d/1c08Crlcs61BK9z0SJDSyX5ASluT9DHQlgOhTPDMDVrs/edit?usp=sharing);
 
 # DiAGRAMAS DE CASOS DE USO 
-LINK();
+![casos-de-uso-1](./casos.jpg)
 
 # DIAGRAMAS DE CLASSES 
-LINK();
+![classe](./classe.jpg)
 
 # PLANO PARA ESPECIFICAÇÃO FORMAL
 LINK();
