@@ -7,7 +7,7 @@ ambiente virtual simples, reforçando conceitos de planejamento, organização e
 
 LINK DEFINIÇÃO DOPROJETO();
 
-# ODS - 2 FOME ZERO E AGRICULTURA SUSTENTÁVEL
+# ODS - 2 FOME ZERO E AGRICULTURA SUSTENTÁVEL, , ODS 12 – Consumo e Produção Responsáveis e ODS 15 – Vida Terrestre
 - No começo, o jogador planta para sobreviver.
 - O jogador planta a semente e tem que esperar ela crescer para poder colher, mostra que a agricultura é um ciclo e precisa ser respeitado.
 - O jogador planta sementes, cuida das plantas e colhe alimentos. Isso mostra o ciclo básico da agricultura, essencial para acabar com a fome.
