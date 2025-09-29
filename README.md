@@ -21,7 +21,7 @@ ambiente virtual simples, reforçando conceitos de planejamento, organização e
 ![classe](./classe.jpg)
 
 # PLANO PARA ESPECIFICAÇÃO FORMAL
-LINK();
+LINK(https://docs.google.com/document/d/1JxJAfDZAqAH-mM_7gpLyC7lRYfPxkEeL/edit?usp=drivesdk&ouid=115261575508859483981&rtpof=true&sd=true);
 
 # APRESENTAÇÃO
 LINK(https://www.canva.com/design/DAG0W8bQ8Mo/i2dJ0e48gpE_VrCjdFPCEw/edit?utm_content=DAG0W8bQ8Mo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);
