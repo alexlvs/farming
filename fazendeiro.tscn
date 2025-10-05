@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://djovsm8xk06dv"]
+[gd_scene load_steps=9 format=3 uid="uid://djovsm8xk06dv"]
 
+[ext_resource type="Script" uid="uid://bpp0eb8h52ab8" path="res://fazendeiro.gd" id="1_q8gsj"]
 [ext_resource type="Texture2D" uid="uid://cw6jd5cpl8ta2" path="res://fotos/walk and idle.png" id="1_uaowx"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_q8gsj"]
@@ -35,14 +36,22 @@ animations = [{
 }],
 "loop": true,
 "name": &"parado",
-"speed": 5.0
+"speed": 3.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uaowx"]
+size = Vector2(12, 19)
+
 [node name="fazendeiro" type="CharacterBody2D"]
+script = ExtResource("1_q8gsj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(797, 345)
 sprite_frames = SubResource("SpriteFrames_32mkf")
 animation = &"parado"
-frame = 2
-frame_progress = 0.78431827
+autoplay = "parado"
+frame_progress = 0.061747927
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(798, 346.5)
+shape = SubResource("RectangleShape2D_uaowx")
