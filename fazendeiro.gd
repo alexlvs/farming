@@ -22,5 +22,12 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	
+	if Input.is_action_just_pressed("ui_up"):
+		velocity.y = -SPEED
+	elif Input.is_action_just_pressed("ui_down"):
+		velocity.y = SPEED
+	elif Input.is_action_just_released("ui_up") or Input.is_action_just_released("ui_down"):
+		velocity.y = 0  # Para quando solta a tecla
+	
 	move_and_slide()
