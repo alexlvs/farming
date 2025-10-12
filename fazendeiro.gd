@@ -1,33 +1,25 @@
 extends CharacterBody2D
 
-
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
-
+const SPEED = 150.0  # pode ajustar a velocidade aqui
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		pass
-		#velocity += get_gravity() * delta
+	var direction = Vector2.ZERO
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+	# Movimento nas 4 direções
+	if Input.is_action_pressed("ui_right"):
+		direction.x += 1
+	if Input.is_action_pressed("ui_left"):
+		direction.x -= 1
+	if Input.is_action_pressed("ui_down"):
+		direction.y += 1
+	if Input.is_action_pressed("ui_up"):
+		direction.y -= 1
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-	
-	if Input.is_action_just_pressed("ui_up"):
-		velocity.y = -SPEED
-	elif Input.is_action_just_pressed("ui_down"):
-		velocity.y = SPEED
-	elif Input.is_action_just_released("ui_up") or Input.is_action_just_released("ui_down"):
-		velocity.y = 0  # Para quando solta a tecla
-	
+	# Normaliza o vetor (pra não andar mais rápido na diagonal)
+	direction = direction.normalized()
+
+	# Define a velocidade
+	velocity = direction * SPEED
+
+	# Move e detecta colisão automaticamente
 	move_and_slide()
