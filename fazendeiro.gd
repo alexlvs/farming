@@ -17,9 +17,19 @@ func _physics_process(delta: float) -> void:
 
 	# Normaliza o vetor (pra não andar mais rápido na diagonal)
 	direction = direction.normalized()
-
+	
 	# Define a velocidade
 	velocity = direction * SPEED
-
+	
 	# Move e detecta colisão automaticamente
 	move_and_slide()
+	
+	if direction == Vector2.ZERO:
+		# Nenhuma tecla pressionada → animação parado
+		$AnimatedSprite2D.play("parado")
+	else:
+		# Tocando animação conforme a direção
+		if direction.x > 0:
+			$AnimatedSprite2D.play("andando_frente")
+		elif direction.x < 0:
+			$AnimatedSprite2D.play("andando_tras")
