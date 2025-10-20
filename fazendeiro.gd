@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-const SPEED = 300.0
+const SPEED = 100.0
 const JUMP_VELOCITY = -400.0
 
 
@@ -22,5 +22,14 @@ func _physics_process(delta: float) -> void:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+		$AnimatedSprite2D.play("parado")
 	move_and_slide()
+	if Input.is_action_just_pressed("ui_up"):
+		$AnimatedSprite2D
+	if Input.is_action_just_pressed("ui_down"):
+		$AnimatedSprite2D
+	if Input.is_action_just_pressed("ui_left"):
+		$AnimatedSprite2D.play("andando trás")
+	if Input.is_action_just_pressed("ui_right"):
+		$AnimatedSprite2D.play("andando frente")
+		

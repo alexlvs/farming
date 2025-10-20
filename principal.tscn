@@ -1,7 +1,8 @@
-[gd_scene load_steps=12 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=13 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="PackedScene" uid="uid://djovsm8xk06dv" path="res://fazendeiro.tscn" id="2_m7tbw"]
+[ext_resource type="Script" uid="uid://d0o832w17cfuw" path="res://tomate.gd" id="3_7cuts"]
 [ext_resource type="Texture2D" uid="uid://ww28rvdihbao" path="res://fotos/Crop_Spritesheet.png" id="3_rrtif"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7cuts"]
@@ -49,12 +50,13 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qlig8")
 }],
-"loop": true,
+"loop": false,
 "name": &"tomate",
 "speed": 4.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rrtif"]
+size = Vector2(15, 18)
 
 [node name="Principal" type="Node2D"]
 position = Vector2(-18, 41)
@@ -66,22 +68,27 @@ tile_map_data = PackedByteArray("AAAAAAEAAAADAAEAAAAAAAIAAAADAAEAAAAAAAMAAAADAAE
 [node name="fazendeiro" parent="cenário_grama" instance=ExtResource("2_m7tbw")]
 position = Vector2(-38, -96)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(736, 277)
+[node name="Camera2D" type="Camera2D" parent="cenário_grama/fazendeiro"]
+position = Vector2(754, 298)
 zoom = Vector2(3, 3)
+position_smoothing_enabled = true
 
 [node name="tomate" type="Area2D" parent="."]
-position = Vector2(415, 162)
+position = Vector2(412, 167)
+script = ExtResource("3_7cuts")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="tomate"]
 position = Vector2(310, 157)
 scale = Vector2(0.87500095, 0.99999845)
 sprite_frames = SubResource("SpriteFrames_xrbya")
 animation = &"tomate"
-autoplay = "tomate"
-frame = 4
-frame_progress = 0.44944987
+frame = 2
+frame_progress = 0.8802352
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tomate"]
+position = Vector2(311.5, 157)
 shape = SubResource("RectangleShape2D_rrtif")
-disabled = true
+
+[connection signal="body_entered" from="tomate" to="tomate" method="_on_body_entered"]
+
+[editable path="cenário_grama/fazendeiro"]
