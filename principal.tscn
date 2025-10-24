@@ -938,6 +938,6 @@ offset_right = 171.0
 offset_bottom = 39.0
 theme_override_colors/font_color = Color(0.9820722, 0.13004959, 0.27428812, 1)
 theme_override_font_sizes/font_size = 22
-text = "semente de tomate"
+text = "semente de tomate:"
 
 [connection signal="body_entered" from="tomate" to="tomate" method="_on_body_entered"]
