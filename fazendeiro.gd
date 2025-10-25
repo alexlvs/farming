@@ -33,3 +33,7 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("andando_frente")
 		elif direction.x < 0:
 			$AnimatedSprite2D.play("andando_tras")
+
+
+func _on_sementes_body_entered(body: Node2D) -> void:
+	Dados.semente += 1

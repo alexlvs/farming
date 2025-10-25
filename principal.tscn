@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=33 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="PackedScene" uid="uid://djovsm8xk06dv" path="res://fazendeiro.tscn" id="2_m7tbw"]
@@ -826,6 +826,9 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ep5lw"]
+radius = 7.071068
+
 [node name="Principal" type="Node2D"]
 position = Vector2(-1, -2)
 
@@ -931,7 +934,7 @@ autoplay = "agua"
 
 [node name="segura_informacoes" type="CanvasLayer" parent="."]
 
-[node name="senente_tomate" type="Label" parent="segura_informacoes"]
+[node name="semente_tomate" type="Label" parent="segura_informacoes"]
 offset_left = 18.0
 offset_top = 14.0
 offset_right = 171.0
@@ -940,4 +943,13 @@ theme_override_colors/font_color = Color(0.9820722, 0.13004959, 0.27428812, 1)
 theme_override_font_sizes/font_size = 22
 text = "semente de tomate:"
 
+[node name="sementes" type="Area2D" parent="."]
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sementes"]
+position = Vector2(738, 244)
+shape = SubResource("CircleShape2D_ep5lw")
+
 [connection signal="body_entered" from="tomate" to="tomate" method="_on_body_entered"]
+[connection signal="body_exited" from="tomate" to="tomate" method="_on_body_exited"]
+[connection signal="body_entered" from="sementes" to="fazendeiro" method="_on_sementes_body_entered"]
