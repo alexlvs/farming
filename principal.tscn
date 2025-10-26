@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=56 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="PackedScene" uid="uid://djovsm8xk06dv" path="res://fazendeiro.tscn" id="2_m7tbw"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bw4rjubmt2dsf" path="res://fotos/summer tilemap.png" id="4_7cuts"]
 [ext_resource type="Texture2D" uid="uid://ww28rvdihbao" path="res://fotos/Crop_Spritesheet.png" id="5_emcp4"]
 [ext_resource type="Script" uid="uid://mpod5vk26a6s" path="res://tomate.gd" id="5_ep5lw"]
+[ext_resource type="Texture2D" uid="uid://blt36fctfpbqg" path="res://butterfly spritesheet.png" id="7_jpj0s"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7cuts"]
 texture = ExtResource("3_rrtif")
@@ -829,6 +830,195 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_ep5lw"]
 radius = 7.071068
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ek21e"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1g4wj"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5jtgv"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8wxu"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jrosl"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3mbs"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7lji8"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v7sa1"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xtavp"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twqab"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_56ydn"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_esqc6"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dxi8a"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kar7w"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(160, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i6tcv"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(192, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4vns4"]
+atlas = ExtResource("7_jpj0s")
+region = Rect2(224, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_p6bfq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ek21e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1g4wj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5jtgv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m8wxu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jrosl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y3mbs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7lji8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v7sa1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xtavp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_twqab")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_56ydn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_esqc6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dxi8a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kar7w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i6tcv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4vns4")
+}],
+"loop": true,
+"name": &"borboleta",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uvwpy"]
+size = Vector2(16, 13)
+
+[sub_resource type="Animation" id="Animation_jmlps"]
+resource_name = "voando"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("borboleta:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.9666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-45, 20)]
+}
+
+[sub_resource type="Animation" id="Animation_jpj0s"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("borboleta:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("borboleta/ColorRect:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.99401444, 0.9640369, 0.98277503, 0.45490193)]
+}
+
+[sub_resource type="Animation" id="Animation_vwsrf"]
+resource_name = "noite"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("borboleta/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.9666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.99401444, 0.9640369, 0.98277503, 0.45490193), Color(0.99401444, 0.9640369, 0.98277503, 0.45490193)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_3chw3"]
+_data = {
+&"RESET": SubResource("Animation_jpj0s"),
+&"noite": SubResource("Animation_vwsrf"),
+&"voando": SubResource("Animation_jmlps")
+}
+
 [node name="Principal" type="Node2D"]
 position = Vector2(-1, -2)
 
@@ -949,6 +1139,36 @@ monitorable = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sementes"]
 position = Vector2(738, 244)
 shape = SubResource("CircleShape2D_ep5lw")
+
+[node name="borboleta" type="Area2D" parent="."]
+z_index = 2
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="borboleta"]
+position = Vector2(793.00006, 165)
+scale = Vector2(0.59374946, 0.54687524)
+sprite_frames = SubResource("SpriteFrames_p6bfq")
+animation = &"borboleta"
+autoplay = "borboleta"
+frame = 15
+frame_progress = 1.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="borboleta"]
+position = Vector2(793, 163)
+shape = SubResource("RectangleShape2D_uvwpy")
+
+[node name="ColorRect" type="ColorRect" parent="borboleta"]
+self_modulate = Color(0.99401444, 0.9640369, 0.98277503, 0.45490193)
+offset_left = -79.0
+offset_top = -142.0
+offset_right = 1115.0
+offset_bottom = 529.0
+color = Color(0, 0, 0, 0.1882353)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="borboleta"]
+root_node = NodePath("../..")
+libraries = {
+&"": SubResource("AnimationLibrary_3chw3")
+}
 
 [connection signal="body_entered" from="tomate" to="tomate" method="_on_body_entered"]
 [connection signal="body_exited" from="tomate" to="tomate" method="_on_body_exited"]

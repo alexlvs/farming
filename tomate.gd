@@ -31,6 +31,7 @@ func _process(delta: float) -> void:
 
 	# aqui ver se ta na terra
 func _on_body_entered(body: Node2D) -> void:
+	$"../borboleta/AnimationPlayer".play("voando")
 	terra = "sim"
 	
 	# aqui ver se saiu da terra
