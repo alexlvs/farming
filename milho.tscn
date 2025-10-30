@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://s0lihphhdeil"]
+
+[ext_resource type="Texture2D" uid="uid://ww28rvdihbao" path="res://fotos/Crop_Spritesheet.png" id="1_3nccf"]
+[ext_resource type="Script" uid="uid://b0m60yktd5rye" path="res://milho.gd" id="1_q3nbf"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dj5if"]
+atlas = ExtResource("1_3nccf")
+region = Rect2(80, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nydr"]
+atlas = ExtResource("1_3nccf")
+region = Rect2(64, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hgpjb"]
+atlas = ExtResource("1_3nccf")
+region = Rect2(48, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1holt"]
+atlas = ExtResource("1_3nccf")
+region = Rect2(32, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rbjav"]
+atlas = ExtResource("1_3nccf")
+region = Rect2(16, 144, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obggl"]
+atlas = ExtResource("1_3nccf")
+region = Rect2(0, 144, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b8co8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dj5if")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nydr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hgpjb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1holt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rbjav")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_obggl")
+}],
+"loop": true,
+"name": &"milho",
+"speed": 3.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q3nbf"]
+size = Vector2(10, 14)
+
+[node name="milho" type="Area2D"]
+script = ExtResource("1_q3nbf")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-3, -2)
+sprite_frames = SubResource("SpriteFrames_b8co8")
+animation = &"milho"
+autoplay = "milho"
+frame = 3
+frame_progress = 0.58795196
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-3, -2)
+shape = SubResource("RectangleShape2D_q3nbf")
