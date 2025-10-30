@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=62 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="PackedScene" uid="uid://djovsm8xk06dv" path="res://fazendeiro.tscn" id="2_m7tbw"]
@@ -712,6 +712,9 @@ size = Vector2(143, 102)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrbya"]
 size = Vector2(20, 65)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ommbi"]
+size = Vector2(33, 56.5)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ep5lw"]
 atlas = ExtResource("5_emcp4")
 region = Rect2(80, 32, 16, 16)
@@ -763,7 +766,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xe7g3"]
-size = Vector2(15, 16)
+size = Vector2(17.946701, 18)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sf0on"]
 atlas = ExtResource("4_7cuts")
@@ -990,6 +993,22 @@ tracks/1/keys = {
 "values": [Color(0.99401444, 0.9640369, 0.98277503, 0.45490193)]
 }
 
+[sub_resource type="Animation" id="Animation_qlig8"]
+resource_name = "dia"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("borboleta/ColorRect:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 4.9666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(1, 0.9647059, 0.972549, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_vwsrf"]
 resource_name = "noite"
 length = 5.0
@@ -1020,22 +1039,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(0, 0), Vector2(-45, 20)]
-}
-
-[sub_resource type="Animation" id="Animation_qlig8"]
-resource_name = "dia"
-length = 5.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("borboleta/ColorRect:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0.033333335, 4.9666667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(0, 0, 0, 1), Color(1, 0.9647059, 0.972549, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3chw3"]
@@ -1117,8 +1120,29 @@ shape = SubResource("RectangleShape2D_xrbya")
 position = Vector2(497, 58)
 shape = SubResource("RectangleShape2D_xrbya")
 
+[node name="ColisorAvoregrossalaele" type="CollisionShape2D" parent="Paredes do Mapa"]
+position = Vector2(112, 8.25)
+shape = SubResource("RectangleShape2D_ommbi")
+
+[node name="ColisorAvoregrossalaele2" type="CollisionShape2D" parent="Paredes do Mapa"]
+position = Vector2(942, -36)
+shape = SubResource("RectangleShape2D_ommbi")
+
+[node name="ColisorAvoregrossalaele3" type="CollisionShape2D" parent="Paredes do Mapa"]
+position = Vector2(942, -36)
+shape = SubResource("RectangleShape2D_ommbi")
+
+[node name="ColisorAvoregrossalaele4" type="CollisionShape2D" parent="Paredes do Mapa"]
+position = Vector2(76, 197)
+shape = SubResource("RectangleShape2D_ommbi")
+
+[node name="ColisorAvoregrossalaele5" type="CollisionShape2D" parent="Paredes do Mapa"]
+position = Vector2(593.5, 425)
+shape = SubResource("RectangleShape2D_ommbi")
+
 [node name="tomate" type="Area2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(1, 1)
+scale = Vector2(0.99970824, 1)
 monitorable = false
 script = ExtResource("5_ep5lw")
 
@@ -1147,7 +1171,8 @@ frame_progress = 0.38880327
 speed_scale = 0.5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="tomate"]
-position = Vector2(685, 300)
+position = Vector2(685.1998, 301)
+scale = Vector2(1.003256, 1)
 shape = SubResource("RectangleShape2D_xe7g3")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="tomate"]
@@ -1161,7 +1186,7 @@ position = Vector2(721, 300)
 shape = SubResource("RectangleShape2D_xe7g3")
 
 [node name="tomate2" type="Area2D" parent="."]
-position = Vector2(0, 22)
+position = Vector2(1, 24)
 monitorable = false
 script = ExtResource("5_ep5lw")
 
@@ -1204,7 +1229,7 @@ position = Vector2(721, 300)
 shape = SubResource("RectangleShape2D_xe7g3")
 
 [node name="tomate3" type="Area2D" parent="."]
-position = Vector2(0, 45)
+position = Vector2(1, 47)
 monitorable = false
 script = ExtResource("5_ep5lw")
 
@@ -1247,7 +1272,7 @@ position = Vector2(721, 300)
 shape = SubResource("RectangleShape2D_xe7g3")
 
 [node name="milho" parent="." instance=ExtResource("7_vwsrf")]
-position = Vector2(718, 302)
+position = Vector2(726, 304)
 
 [node name="agua" type="AnimatedSprite2D" parent="."]
 position = Vector2(524, 200)
@@ -1279,10 +1304,11 @@ theme_override_font_sizes/font_size = 22
 text = "semente de tomate:"
 
 [node name="sementes" type="Area2D" parent="."]
+position = Vector2(36, 28)
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="sementes"]
-position = Vector2(738, 244)
+position = Vector2(702, 215)
 shape = SubResource("CircleShape2D_ep5lw")
 
 [node name="borboleta" type="Area2D" parent="."]
@@ -1304,10 +1330,10 @@ shape = SubResource("RectangleShape2D_uvwpy")
 [node name="ColorRect" type="ColorRect" parent="borboleta"]
 self_modulate = Color(0.99401444, 0.9640369, 0.98277503, 0.45490193)
 z_index = 7
-offset_left = -110.0
-offset_top = -66.0
-offset_right = 1115.0
-offset_bottom = 625.0
+offset_left = -100.0
+offset_top = -75.0
+offset_right = 1125.0
+offset_bottom = 616.0
 color = Color(1, 1, 1, 0)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="borboleta"]
