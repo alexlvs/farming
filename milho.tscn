@@ -54,17 +54,20 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q3nbf"]
-size = Vector2(19, 18)
+size = Vector2(16, 15)
 
 [node name="milho" type="Area2D"]
 script = ExtResource("1_q3nbf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-3, -2)
+position = Vector2(-4, -2)
 sprite_frames = SubResource("SpriteFrames_b8co8")
 animation = &"milho"
 frame_progress = 0.278094
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3.5, -2)
+position = Vector2(-4, -2)
 shape = SubResource("RectangleShape2D_q3nbf")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

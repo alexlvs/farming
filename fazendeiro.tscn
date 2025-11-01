@@ -168,12 +168,12 @@ size = Vector2(12, 19)
 script = ExtResource("1_q8gsj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(797, 345)
+position = Vector2(798, 346)
 sprite_frames = SubResource("SpriteFrames_32mkf")
 animation = &"andando_frente"
 autoplay = "parado"
 frame_progress = 0.4833491
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(798, 346.5)
+position = Vector2(798, 347)
 shape = SubResource("RectangleShape2D_uaowx")

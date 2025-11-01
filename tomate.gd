@@ -3,6 +3,8 @@ extends Area2D
 var terra = "nao"
 var plantar = "nao"
 var ja_tem_planta = "nao"
+var pode_colher = "nao"
+
 
 
 func _ready() -> void:
@@ -34,7 +36,9 @@ func _process(delta: float) -> void:
 			$Tomate1.frame = 4
 			await get_tree().create_timer(7,0).timeout
 			$Tomate1.frame = 5
-			
+			pode_colher = "sim"
+		if Input.is_action_just_released("colher") and pode_colher == "sim":
+				queue_free()
 			
 
 
