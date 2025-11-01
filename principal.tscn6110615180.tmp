@@ -1385,19 +1385,11 @@ autoplay = "agua"
 [node name="semente_tomate" type="Label" parent="segura_informacoes"]
 offset_left = 18.0
 offset_top = 14.0
-offset_right = 231.0
-offset_bottom = 45.0
+offset_right = 171.0
+offset_bottom = 39.0
 theme_override_colors/font_color = Color(0.9820722, 0.13004959, 0.27428812, 1)
 theme_override_font_sizes/font_size = 22
 text = "semente de tomate:"
-
-[node name="vegetais" type="Label" parent="segura_informacoes"]
-offset_left = 19.0
-offset_top = 45.0
-offset_right = 93.0
-offset_bottom = 68.0
-theme_override_colors/font_color = Color(0.8549069, 0.14805365, 0.8028097, 1)
-text = "Vegetais :"
 
 [node name="sementes" type="Area2D" parent="."]
 position = Vector2(36, 29)

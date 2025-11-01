@@ -13,11 +13,5 @@ func _process(delta: float) -> void:
 		instance.position =$milho.position
 		add_child(instance)
 		Dados.semente -=1
+	
 		
-		
-
-		
-
-
-func _on_tomate_body_entered(body: Node2D) -> void:
-	pass # Replace with function body.

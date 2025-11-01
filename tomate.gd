@@ -4,6 +4,7 @@ var terra = "nao"
 var plantar = "nao"
 var ja_tem_planta = "nao"
 var pode_colher = "nao"
+var esta_perto = "nao"
 
 
 
@@ -37,9 +38,11 @@ func _process(delta: float) -> void:
 			await get_tree().create_timer(7,0).timeout
 			$Tomate1.frame = 5
 			pode_colher = "sim"
+			
 		if Input.is_action_just_released("colher") and pode_colher == "sim":
 				queue_free()
 			
+
 
 
 	# aqui ver se ta na terra
@@ -52,3 +55,13 @@ func _on_body_entered(body: Node2D) -> void:
 func _on_body_exited(body: Node2D) -> void:
 	$"../borboleta/AnimationPlayer".play("noite")
 	terra = "nao"
+	
+	
+
+
+func _on_tomate_body_entered(body: Node2D) -> void:
+	var esta_perto = "sim"
+
+
+func _on_tomate_body_exited(body: Node2D) -> void:
+	var esta_perto = "nao"
