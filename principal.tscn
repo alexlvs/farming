@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=64 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://io45femojtbk" path="res://principal.gd" id="1_vwsrf"]
@@ -695,7 +695,7 @@ texture = ExtResource("4_7cuts")
 sources/0 = SubResource("TileSetAtlasSource_emcp4")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qlig8"]
-size = Vector2(41, 34)
+size = Vector2(24, 18)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7cuts"]
 size = Vector2(1179, 45)
@@ -708,13 +708,16 @@ radius = 17.0
 height = 672.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vwsrf"]
-size = Vector2(143, 102)
+size = Vector2(132, 82)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrbya"]
-size = Vector2(17, 23.5)
+size = Vector2(17, 25.71875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ommbi"]
-size = Vector2(33, 56.5)
+size = Vector2(42, 26.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sf0on"]
+size = Vector2(29.5, 9)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ep5lw"]
 atlas = ExtResource("5_emcp4")
@@ -1082,7 +1085,7 @@ position_smoothing_enabled = true
 
 [node name="ColiisorArvore" type="CollisionShape2D" parent="Paredes do Mapa"]
 z_index = 1
-position = Vector2(547.5, 332)
+position = Vector2(78, 213)
 shape = SubResource("RectangleShape2D_qlig8")
 
 [node name="Parede inferior" type="CollisionShape2D" parent="Paredes do Mapa"]
@@ -1103,44 +1106,52 @@ shape = SubResource("CapsuleShape2D_ep5lw")
 
 [node name="colisorRio" type="CollisionShape2D" parent="Paredes do Mapa"]
 z_index = 1
-position = Vector2(550.5, 180)
+position = Vector2(549, 172)
 shape = SubResource("RectangleShape2D_vwsrf")
 
 [node name="ColidoArvorefina" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(240, 384)
+position = Vector2(240, 383)
 shape = SubResource("RectangleShape2D_xrbya")
 
 [node name="ColidoArvorefina2" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(911.5, 370.75)
+position = Vector2(912, 368.90625)
 shape = SubResource("RectangleShape2D_xrbya")
 
 [node name="ColidoArvorefina3" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(752, 58)
+position = Vector2(752, 78.140625)
 shape = SubResource("RectangleShape2D_xrbya")
 
 [node name="ColidoArvorefina4" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(497, 58)
+position = Vector2(496, 79)
 shape = SubResource("RectangleShape2D_xrbya")
 
 [node name="ColisorAvoregrossalaele" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(112, 8.25)
+position = Vector2(111, 25)
 shape = SubResource("RectangleShape2D_ommbi")
 
 [node name="ColisorAvoregrossalaele2" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(942, -36)
+position = Vector2(943, -27.5)
 shape = SubResource("RectangleShape2D_ommbi")
 
 [node name="ColisorAvoregrossalaele3" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(942, -36)
+position = Vector2(880, 128)
 shape = SubResource("RectangleShape2D_ommbi")
 
 [node name="ColisorAvoregrossalaele4" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(76, 197)
+position = Vector2(352, 127)
 shape = SubResource("RectangleShape2D_ommbi")
 
 [node name="ColisorAvoregrossalaele5" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(593.5, 425)
+position = Vector2(591, 438.25)
 shape = SubResource("RectangleShape2D_ommbi")
+
+[node name="ColisorAvoregrossalaele6" type="CollisionShape2D" parent="Paredes do Mapa"]
+position = Vector2(545, 338)
+shape = SubResource("RectangleShape2D_ommbi")
+
+[node name="CollisionPedra" type="CollisionShape2D" parent="Paredes do Mapa"]
+position = Vector2(825.75, 197.5)
+shape = SubResource("RectangleShape2D_sf0on")
 
 [node name="tomate" type="Area2D" parent="."]
 position = Vector2(1, 2)
