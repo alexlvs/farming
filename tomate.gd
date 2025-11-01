@@ -57,11 +57,3 @@ func _on_body_exited(body: Node2D) -> void:
 	terra = "nao"
 	
 	
-
-
-func _on_tomate_body_entered(body: Node2D) -> void:
-	var esta_perto = "sim"
-
-
-func _on_tomate_body_exited(body: Node2D) -> void:
-	var esta_perto = "nao"

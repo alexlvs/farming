@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=66 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://io45femojtbk" path="res://principal.gd" id="1_vwsrf"]
@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://mpod5vk26a6s" path="res://tomate.gd" id="5_ep5lw"]
 [ext_resource type="Texture2D" uid="uid://blt36fctfpbqg" path="res://butterfly spritesheet.png" id="7_jpj0s"]
 [ext_resource type="PackedScene" uid="uid://s0lihphhdeil" path="res://milho.tscn" id="7_vwsrf"]
+[ext_resource type="Script" uid="uid://c71tycoitsqkh" path="res://vegetais.gd" id="9_xrbya"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7cuts"]
 texture = ExtResource("3_rrtif")
@@ -1408,6 +1409,15 @@ offset_bottom = 39.0
 theme_override_colors/font_color = Color(0.9820722, 0.13004959, 0.27428812, 1)
 theme_override_font_sizes/font_size = 22
 text = "semente de tomate:"
+
+[node name="vegetais" type="Label" parent="segura_informacoes"]
+offset_left = 21.0
+offset_top = 44.0
+offset_right = 85.0
+offset_bottom = 67.0
+theme_override_colors/font_color = Color(0.9347907, 0.0008677012, 0.9587706, 1)
+text = "vegetais :"
+script = ExtResource("9_xrbya")
 
 [node name="sementes" type="Area2D" parent="."]
 position = Vector2(36, 28)
