@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=65 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://io45femojtbk" path="res://principal.gd" id="1_vwsrf"]
@@ -719,6 +719,9 @@ size = Vector2(42, 26.5)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sf0on"]
 size = Vector2(29.5, 9)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_qlig8"]
+radius = 41.0
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_ep5lw"]
 atlas = ExtResource("5_emcp4")
 region = Rect2(80, 32, 16, 16)
@@ -1152,6 +1155,10 @@ shape = SubResource("RectangleShape2D_ommbi")
 [node name="CollisionPedra" type="CollisionShape2D" parent="Paredes do Mapa"]
 position = Vector2(825.75, 197.5)
 shape = SubResource("RectangleShape2D_sf0on")
+
+[node name="CollisionCasa" type="CollisionShape2D" parent="Paredes do Mapa"]
+position = Vector2(698, 136)
+shape = SubResource("CircleShape2D_qlig8")
 
 [node name="tomate" type="Area2D" parent="."]
 position = Vector2(1, 2)
