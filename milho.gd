@@ -31,7 +31,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if Input.is_action_just_released("colher") and pode_colher == "sim" and esta_perto == "sim":
-			queue_free()
+		Dados.milho +=1
+		queue_free()
 	
 
 func _on_body_entered(body: Node2D) -> void:
