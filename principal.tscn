@@ -1380,12 +1380,6 @@ shape = SubResource("RectangleShape2D_xe7g3")
 [node name="milho" parent="." instance=ExtResource("7_vwsrf")]
 position = Vector2(727, 305)
 
-[node name="milho2" parent="." instance=ExtResource("7_vwsrf")]
-position = Vector2(727, 328)
-
-[node name="milho3" parent="." instance=ExtResource("7_vwsrf")]
-position = Vector2(727, 351)
-
 [node name="agua" type="AnimatedSprite2D" parent="."]
 position = Vector2(524, 200)
 sprite_frames = SubResource("SpriteFrames_cxgpi")
