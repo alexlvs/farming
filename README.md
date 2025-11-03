@@ -5,6 +5,18 @@ O presente trabalho apresenta o desenvolvimento de um jogo digital de simulaçã
 projeto tem como objetivo proporcionar ao jogador uma experiência lúdica e interativa de cultivo, colheita e gerenciamento de recursos em um 
 ambiente virtual simples, reforçando conceitos de planejamento, organização e tomada de decisão. 
 
+Fase de desenvolvimento:
+O jogo ainda não foi desenvolvido completamente, mas já é possível realizar algumas ações e jogar um pouco.
+ações:
+plantar milho, usando a letra M, 
+colher usando a letra C 
+vender os vegetais usando a letra Q.
+
+personagens desenvolvidos:
+o fazendeiro
+o vendedor
+
+No canto superior é possível vizualizar os vegetais e o dinheiro que recebe com a venda dos vegetais.
 
 # ODS - 2 FOME ZERO E AGRICULTURA SUSTENTÁVEL e  ODS 15 – VIDA TERRESTRE
 - No começo, o jogador planta para sobreviver.
