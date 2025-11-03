@@ -18,7 +18,7 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	
-	$"../segura_informacoes/semente_tomate".text = str("Número de sementes: " ,Dados.semente)
+	$"../segura_informacoes/semente_tomate".text = str("Sementes: " ,Dados.semente)
 	
 	if terra == "sim" and ja_tem_planta == "nao" :
 		if Dados.semente >=1 and Input.is_action_just_pressed("ui_accept"):

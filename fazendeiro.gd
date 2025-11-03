@@ -1,6 +1,9 @@
 extends CharacterBody2D
 
 const SPEED = 100.0  # pode ajustar a velocidade aqui
+var pode_vender = "nao"
+
+
 
 func _physics_process(delta: float) -> void:
 	var direction = Vector2.ZERO
@@ -33,7 +36,26 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("andando_frente")
 		elif direction.x < 0:
 			$AnimatedSprite2D.play("andando_tras")
+			
+	if  Input.is_action_just_released("vender") and Dados.milho >=1 and pode_vender == "sim":
+		print("vender")
+		Dados.milho -= 1
+		Dados.dinheiro +=5
+			
+	
 
-
+	
 func _on_sementes_body_entered(body: Node2D) -> void:
 	Dados.semente += 1
+
+
+func _on_npc_venda_body_entered(body: Node2D) -> void:
+	pode_vender = "sim"
+	
+	
+
+
+func _on_npc_venda_body_exited(body: Node2D) -> void:
+	pode_vender = "nao"
+	
+		

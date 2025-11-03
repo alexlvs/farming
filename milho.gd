@@ -1,19 +1,22 @@
 extends Area2D
-#var terra = "nao"
-#var plantar = "nao"
-#var ja_tem_planta = "nao"
+var terra = "nao"
+var plantar = "nao"
+var ja_tem_planta ="nao"
 var pode_colher = "nao"
 var esta_perto = "nao"
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	hide()
+	
+
 	if Input.is_action_just_released("milho"):
 			show()
-			#ja_tem_planta = "sim"
+			ja_tem_planta = "sim"
 			
 			$AnimatedSprite2D.frame = 0
 			await get_tree().create_timer(2,0).timeout
+			plantar == "nao"
 			$AnimatedSprite2D.frame = 1
 			await get_tree().create_timer(3,0).timeout
 			$AnimatedSprite2D.frame = 2
