@@ -1,6 +1,6 @@
 extends Node
 var semente = 0
-var milho = 5
+var milho = 0
 var dinheiro = 0
 
 

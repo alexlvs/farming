@@ -1222,9 +1222,9 @@ script = ExtResource("9_xrbya")
 
 [node name="Dinheiro" type="Label" parent="segura_informacoes"]
 offset_left = 19.0
-offset_top = 65.0
+offset_top = 64.0
 offset_right = 111.0
-offset_bottom = 96.0
+offset_bottom = 95.0
 theme_override_colors/font_color = Color(0.9867516, 0.9867516, 0.9867516, 1)
 theme_override_font_sizes/font_size = 22
 text = "Dinheiro"
