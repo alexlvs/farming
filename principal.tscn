@@ -1115,7 +1115,7 @@ position = Vector2(513.5, 503.5)
 shape = SubResource("RectangleShape2D_7cuts")
 
 [node name="Parede superior" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(513, -125)
+position = Vector2(515, -123)
 shape = SubResource("RectangleShape2D_emcp4")
 
 [node name="Parede esquerda" type="CollisionShape2D" parent="Paredes do Mapa"]
@@ -1123,7 +1123,7 @@ position = Vector2(-64, 192)
 shape = SubResource("CapsuleShape2D_ep5lw")
 
 [node name="Parede direita" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(1093, 194)
+position = Vector2(1087, 193)
 shape = SubResource("CapsuleShape2D_ep5lw")
 
 [node name="colisorRio" type="CollisionShape2D" parent="Paredes do Mapa"]
