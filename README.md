@@ -7,12 +7,15 @@ ambiente virtual simples, reforçando conceitos de planejamento, organização e
 
 Fase de desenvolvimento:
 O jogo ainda não foi desenvolvido completamente, mas já é possível realizar algumas ações e jogar um pouco.
+
 ações:
+
 plantar milho, usando a letra M, 
 colher usando a letra C 
 vender os vegetais usando a letra Q.
 
 personagens desenvolvidos:
+
 o fazendeiro
 o vendedor
 
@@ -33,7 +36,7 @@ No canto superior é possível vizualizar os vegetais e o dinheiro que recebe co
 ![classe](./classe.jpg)
 
 # PLANO PARA ESPECIFICAÇÃO FORMAL
-LINK(https://docs.google.com/document/d/1JxJAfDZAqAH-mM_7gpLyC7lRYfPxkEeL/edit?usp=drivesdk&ouid=115261575508859483981&rtpof=true&sd=true);
+LINK(https://docs.google.com/document/d/1HSAzPctcLFDkGFSJ_cGiruchaLZiQZC5H1hpZHNV3oo/edit?usp=sharing);
 
 # APRESENTAÇÃO
 LINK(https://www.canva.com/design/DAG0W8bQ8Mo/i2dJ0e48gpE_VrCjdFPCEw/edit?utm_content=DAG0W8bQ8Mo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);
