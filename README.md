@@ -10,14 +10,16 @@ O jogo ainda não foi desenvolvido completamente, mas já é possível realizar 
 
 ações:
 
-plantar milho, usando a letra M, 
-colher usando a letra C 
-vender os vegetais usando a letra Q.
+- Plantar milho, usando a letra M;
+  
+- Colher usando a letra C;
 
-personagens desenvolvidos:
+- Vender os vegetais usando a letra Q.
 
-o fazendeiro
-o vendedor
+Personagens desenvolvidos:
+
+- O fazendeiro
+- O comprador
 
 No canto superior é possível vizualizar os vegetais e o dinheiro que recebe com a venda dos vegetais.
 
@@ -38,5 +40,4 @@ No canto superior é possível vizualizar os vegetais e o dinheiro que recebe co
 # PLANO PARA ESPECIFICAÇÃO FORMAL
 LINK(https://docs.google.com/document/d/1HSAzPctcLFDkGFSJ_cGiruchaLZiQZC5H1hpZHNV3oo/edit?usp=sharing);
 
-# APRESENTAÇÃO
-LINK(https://www.canva.com/design/DAG0W8bQ8Mo/i2dJ0e48gpE_VrCjdFPCEw/edit?utm_content=DAG0W8bQ8Mo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton);
+
