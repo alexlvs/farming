@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=70 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://io45femojtbk" path="res://principal.gd" id="1_vwsrf"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bw4rjubmt2dsf" path="res://fotos/summer tilemap.png" id="4_7cuts"]
 [ext_resource type="Script" uid="uid://mpod5vk26a6s" path="res://tomate.gd" id="5_ep5lw"]
 [ext_resource type="Texture2D" uid="uid://blt36fctfpbqg" path="res://fotos/butterfly spritesheet.png" id="7_jpj0s"]
+[ext_resource type="Script" uid="uid://byebvgby61hg8" path="res://atalhos.gd" id="8_sf0on"]
 [ext_resource type="Script" uid="uid://c71tycoitsqkh" path="res://vegetais.gd" id="9_xrbya"]
 [ext_resource type="Script" uid="uid://b8y6tnuar3kx4" path="res://dinheiro.gd" id="10_sf0on"]
 [ext_resource type="Texture2D" uid="uid://30grk7p017ke" path="res://fotos/blue mushroom sheet.png" id="11_ommbi"]
@@ -1201,34 +1202,50 @@ autoplay = "agua"
 
 [node name="segura_informacoes" type="CanvasLayer" parent="."]
 
-[node name="semente_tomate" type="Label" parent="segura_informacoes"]
-offset_left = 18.0
+[node name="semente" type="Label" parent="segura_informacoes"]
+offset_left = 17.0
 offset_top = 14.0
-offset_right = 171.0
-offset_bottom = 39.0
+offset_right = 170.0
+offset_bottom = 45.0
 theme_override_colors/font_color = Color(0.9820722, 0.13004959, 0.27428812, 1)
 theme_override_font_sizes/font_size = 22
 text = "Sementes :"
 
 [node name="vegetais" type="Label" parent="segura_informacoes"]
-offset_left = 19.0
+offset_left = 17.0
 offset_top = 38.0
-offset_right = 121.0
+offset_right = 119.0
 offset_bottom = 69.0
-theme_override_colors/font_color = Color(0.9347907, 0.0008677012, 0.9587706, 1)
+theme_override_colors/font_color = Color(0.8657704, 0.68800545, 0.116166346, 1)
 theme_override_font_sizes/font_size = 22
 text = "Vegetais :"
 script = ExtResource("9_xrbya")
 
 [node name="Dinheiro" type="Label" parent="segura_informacoes"]
-offset_left = 19.0
+offset_left = 18.0
 offset_top = 64.0
-offset_right = 111.0
+offset_right = 110.0
 offset_bottom = 95.0
 theme_override_colors/font_color = Color(0.9867516, 0.9867516, 0.9867516, 1)
 theme_override_font_sizes/font_size = 22
 text = "Dinheiro"
 script = ExtResource("10_sf0on")
+
+[node name="atalhos" type="Label" parent="segura_informacoes"]
+offset_left = 5.0
+offset_top = 508.0
+offset_right = 253.0
+offset_bottom = 652.0
+theme_override_colors/font_color = Color(0.12225223, 0.12225223, 0.12225223, 1)
+theme_override_font_sizes/font_size = 13
+text = "instruções:
+pegue as sementes no 
+balde próximo ao balde de água
+M - plantar milho 
+C -  colher
+Q- vender vegetais no mercador
+"
+script = ExtResource("8_sf0on")
 
 [node name="sementes" type="Area2D" parent="."]
 position = Vector2(36, 28)
