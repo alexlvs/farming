@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 const SPEED = 100.0  # pode ajustar a velocidade aqui
 var pode_vender = "nao"
+var pode_entrar = "nao"
 
 
 
@@ -47,6 +48,12 @@ func _physics_process(delta: float) -> void:
 	
 func _on_sementes_body_entered(body: Node2D) -> void:
 	Dados.semente += 1
+	
+	
+func _on_porta_casa_body_entered(body: Node2D) -> void:
+	#get_tree().change_scene_to_file.bind("res://dentro_da_casa.tscn").call_deferred()
+	print("ola")
+
 
 
 func _on_npc_venda_body_entered(body: Node2D) -> void:
@@ -59,3 +66,8 @@ func _on_npc_venda_body_exited(body: Node2D) -> void:
 	pode_vender = "nao"
 	
 		
+
+
+
+	
+	
