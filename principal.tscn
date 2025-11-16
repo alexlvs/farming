@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=72 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://io45femojtbk" path="res://principal.gd" id="1_vwsrf"]
@@ -725,6 +725,9 @@ size = Vector2(29.5, 9)
 [sub_resource type="CircleShape2D" id="CircleShape2D_qlig8"]
 radius = 38.013157
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_sf0on"]
+radius = 15.132746
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_sf0on"]
 atlas = ExtResource("4_7cuts")
 region = Rect2(128, 112, 16, 16)
@@ -1183,6 +1186,46 @@ shape = SubResource("RectangleShape2D_sf0on")
 [node name="CollisionCasa" type="CollisionShape2D" parent="Paredes do Mapa"]
 position = Vector2(698, 125)
 shape = SubResource("CircleShape2D_qlig8")
+
+[node name="CollisionArbustoPP" type="CollisionShape2D" parent="Paredes do Mapa"]
+z_index = 2
+position = Vector2(223, 61)
+shape = SubResource("CircleShape2D_sf0on")
+
+[node name="CollisionArbustoPP2" type="CollisionShape2D" parent="Paredes do Mapa"]
+z_index = 2
+position = Vector2(446, 110)
+shape = SubResource("CircleShape2D_sf0on")
+
+[node name="CollisionArbustoPP3" type="CollisionShape2D" parent="Paredes do Mapa"]
+z_index = 2
+position = Vector2(622, 45)
+shape = SubResource("CircleShape2D_sf0on")
+
+[node name="CollisionArbustoPP4" type="CollisionShape2D" parent="Paredes do Mapa"]
+z_index = 2
+position = Vector2(190, 206)
+shape = SubResource("CircleShape2D_sf0on")
+
+[node name="CollisionArbustoPP5" type="CollisionShape2D" parent="Paredes do Mapa"]
+z_index = 2
+position = Vector2(414, 238)
+shape = SubResource("CircleShape2D_sf0on")
+
+[node name="CollisionArbustoPP6" type="CollisionShape2D" parent="Paredes do Mapa"]
+z_index = 2
+position = Vector2(334, 398)
+shape = SubResource("CircleShape2D_sf0on")
+
+[node name="CollisionArbustoPP7" type="CollisionShape2D" parent="Paredes do Mapa"]
+z_index = 2
+position = Vector2(990, 398)
+shape = SubResource("CircleShape2D_sf0on")
+
+[node name="CollisionArbustoPP8" type="CollisionShape2D" parent="Paredes do Mapa"]
+z_index = 2
+position = Vector2(942, 29)
+shape = SubResource("CircleShape2D_sf0on")
 
 [node name="planta de agua" type="Node" parent="."]
 
