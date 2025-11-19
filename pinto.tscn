@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://cie2oc05yp63j"]
+
+[ext_resource type="Texture2D" uid="uid://c3x5ht85glm3a" path="res://fotos/Chick.png" id="1_y5p14"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dpp8j"]
+atlas = ExtResource("1_y5p14")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uy3d7"]
+atlas = ExtResource("1_y5p14")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s6xiu"]
+atlas = ExtResource("1_y5p14")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kwaw"]
+atlas = ExtResource("1_y5p14")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_570nh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dpp8j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uy3d7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s6xiu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kwaw")
+}],
+"loop": true,
+"name": &"pinto_parado",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0om1j"]
+size = Vector2(5, 6)
+
+[node name="pinto" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_570nh")
+animation = &"pinto_parado"
+autoplay = "pinto_parado"
+frame_progress = 0.2986258
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 3)
+shape = SubResource("RectangleShape2D_0om1j")

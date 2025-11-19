@@ -1,0 +1,54 @@
+[gd_scene load_steps=8 format=3 uid="uid://dhgk863wokp32"]
+
+[ext_resource type="Texture2D" uid="uid://gp8rwgytufob" path="res://fotos/Chicken.png" id="1_0ulxr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oi035"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_axmqm"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yun1s"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ehqfw"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kbuu2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oi035")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_axmqm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yun1s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ehqfw")
+}],
+"loop": true,
+"name": &"parada",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_khn37"]
+size = Vector2(10.75, 11.75)
+
+[node name="galinha" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_kbuu2")
+animation = &"parada"
+autoplay = "parada"
+frame_progress = 0.41555086
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.625, 0.125)
+shape = SubResource("RectangleShape2D_khn37")
