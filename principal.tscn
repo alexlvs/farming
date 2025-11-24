@@ -731,13 +731,13 @@ radius = 38.013157
 radius = 15.132746
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_eq8du"]
-size = Vector2(10.9999695, 89)
+size = Vector2(4.000319, 89.499115)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cxgpi"]
-size = Vector2(18.75, 12)
+size = Vector2(21.75, 6.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ynwup"]
-size = Vector2(52, 11.5)
+size = Vector2(56, 7.125)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sf0on"]
 atlas = ExtResource("4_7cuts")
@@ -1095,7 +1095,7 @@ animations = [{
 size = Vector2(15, 22)
 
 [node name="Principal" type="Node2D"]
-position = Vector2(82, 74)
+position = Vector2(83, 74)
 script = ExtResource("1_vwsrf")
 
 [node name="cenário_grama" parent="." instance=ExtResource("1_tr6oq")]
@@ -1239,7 +1239,7 @@ position = Vector2(942, 29)
 shape = SubResource("CircleShape2D_sf0on")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(850, 222)
+position = Vector2(847.25, 222)
 shape = SubResource("RectangleShape2D_eq8du")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Paredes do Mapa"]
@@ -1247,17 +1247,17 @@ position = Vector2(951, 221)
 shape = SubResource("RectangleShape2D_eq8du")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(901.99994, 260)
+position = Vector2(901.74976, 262.00037)
 rotation = 1.5710913
-scale = Vector2(0.9999998, 0.9999998)
+scale = Vector2(0.99999875, 0.99999875)
 shape = SubResource("RectangleShape2D_eq8du")
 
 [node name="cima pequeno" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(860.625, 181)
+position = Vector2(863, 180.25)
 shape = SubResource("RectangleShape2D_cxgpi")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(921, 181.75)
+position = Vector2(919, 180.5625)
 shape = SubResource("RectangleShape2D_ynwup")
 
 [node name="planta de agua" type="Node" parent="."]
