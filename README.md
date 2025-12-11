@@ -11,6 +11,8 @@ O jogo ainda não foi desenvolvido completamente, mas já é possível realizar 
 ações:
 
 - Plantar milho, usando a letra M;
+- plantar morango usando a letra B;
+- plantar laranjas usando a letra N;
   
 - Colher usando a letra C;
 
