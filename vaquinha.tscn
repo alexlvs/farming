@@ -1,0 +1,101 @@
+[gd_scene load_steps=14 format=3 uid="uid://dwh4yo68wlboy"]
+
+[ext_resource type="Texture2D" uid="uid://0f0oomkqijgi" path="res://fotos/Cow.png" id="1_8x0qm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8x0qm"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(160, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dknqc"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(128, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6c3hu"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_meygf"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbr71"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lxite"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mdxay"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3nxs8"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgdc0"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o2v1d"]
+atlas = ExtResource("1_8x0qm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_dknqc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8x0qm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dknqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6c3hu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_meygf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbr71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lxite")
+}],
+"loop": true,
+"name": &"andando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mdxay")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3nxs8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgdc0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o2v1d")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6c3hu"]
+size = Vector2(21, 20)
+
+[node name="vaquinha" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_dknqc")
+animation = &"parado"
+autoplay = "parado"
+frame_progress = 0.03133275
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_6c3hu")

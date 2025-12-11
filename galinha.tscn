@@ -1,6 +1,30 @@
-[gd_scene load_steps=8 format=3 uid="uid://dhgk863wokp32"]
+[gd_scene load_steps=14 format=3 uid="uid://dhgk863wokp32"]
 
 [ext_resource type="Texture2D" uid="uid://gp8rwgytufob" path="res://fotos/Chicken.png" id="1_0ulxr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0ulxr"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(80, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kbuu2"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(64, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_khn37"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(48, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uxou2"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(32, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5j6g"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(16, 16, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_27hfn"]
+atlas = ExtResource("1_0ulxr")
+region = Rect2(0, 16, 16, 16)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_oi035"]
 atlas = ExtResource("1_0ulxr")
@@ -20,6 +44,29 @@ region = Rect2(48, 0, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_kbuu2"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0ulxr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kbuu2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_khn37")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uxou2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5j6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_27hfn")
+}],
+"loop": true,
+"name": &"andando",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_oi035")
@@ -45,9 +92,9 @@ size = Vector2(10.75, 11.75)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_kbuu2")
-animation = &"parada"
-autoplay = "parada"
-frame_progress = 0.41555086
+animation = &"andando"
+autoplay = "andando"
+frame_progress = 0.9798575
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.625, 0.125)

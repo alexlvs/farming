@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://cvrq40016xf8"]
+
+[ext_resource type="Texture2D" uid="uid://by13v1jvg3h5b" path="res://fotos/Calf.png" id="1_vsja8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j8iic"]
+atlas = ExtResource("1_vsja8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j1wnn"]
+atlas = ExtResource("1_vsja8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kl5y7"]
+atlas = ExtResource("1_vsja8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wk7fb"]
+atlas = ExtResource("1_vsja8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_crrac"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j8iic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j1wnn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kl5y7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wk7fb")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_12cnc"]
+
+[node name="bizerro" type="Area2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_crrac")
+animation = &"new_animation"
+autoplay = "new_animation"
+frame_progress = 0.26274708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_12cnc")

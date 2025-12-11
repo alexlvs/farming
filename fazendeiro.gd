@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 100.0  # pode ajustar a velocidade aqui
+const SPEED = 100.0  
 var pode_vender = "nao"
 var pode_entrar = "nao"
 
@@ -38,10 +38,22 @@ func _physics_process(delta: float) -> void:
 		elif direction.x < 0:
 			$AnimatedSprite2D.play("andando_tras")
 			
-	if  Input.is_action_just_released("vender") and Dados.milho >=1 and pode_vender == "sim":
+	if  Input.is_action_just_released("vender") and Dados.milho >=1    and pode_vender == "sim":
 		print("vender")
 		Dados.milho -= 1
 		Dados.dinheiro +=5
+		
+	if Input.is_action_just_released("vender") and Dados.total_frutas >= 1 and pode_vender == "sim":
+		print("vender")
+	
+		if Dados.morango > 0:
+			Dados.morango -= 1
+		else:
+			Dados.laranja -= 1
+
+		Dados.dinheiro += 12
+
+		
 			
 	
 
@@ -51,8 +63,8 @@ func _on_sementes_body_entered(body: Node2D) -> void:
 	
 	
 func _on_porta_casa_body_entered(body: Node2D) -> void:
-	#get_tree().change_scene_to_file.bind("res://dentro_da_casa.tscn").call_deferred()
-	print("ola")
+	if body == self:
+		get_tree().change_scene_to_file("res://dentro_da_casa.tscn")
 
 
 
@@ -71,3 +83,8 @@ func _on_npc_venda_body_exited(body: Node2D) -> void:
 
 	
 	
+
+
+func _on_porta_saida_body_entered(body: Node2D) -> void:
+	if body == self:
+		get_tree().change_scene_to_file("res://principal.tscn")
