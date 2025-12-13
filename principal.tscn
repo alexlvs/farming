@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=89 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://io45femojtbk" path="res://principal.gd" id="1_vwsrf"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://32mjiya7srxc" path="res://fotos/plant repack.png" id="3_rrtif"]
 [ext_resource type="Texture2D" uid="uid://bw4rjubmt2dsf" path="res://fotos/summer tilemap.png" id="4_7cuts"]
 [ext_resource type="Script" uid="uid://mpod5vk26a6s" path="res://tomate.gd" id="5_ep5lw"]
+[ext_resource type="Texture2D" uid="uid://67n51h5nghvm" path="res://fotos/summer and spring items.png" id="5_rjysx"]
 [ext_resource type="Script" uid="uid://b7tx7koxw7mpf" path="res://frutas.gd" id="6_eq8du"]
 [ext_resource type="Texture2D" uid="uid://blt36fctfpbqg" path="res://fotos/butterfly spritesheet.png" id="7_jpj0s"]
 [ext_resource type="Script" uid="uid://byebvgby61hg8" path="res://atalhos.gd" id="8_sf0on"]
@@ -702,6 +703,162 @@ texture = ExtResource("4_7cuts")
 [sub_resource type="TileSet" id="TileSet_ep5lw"]
 sources/0 = SubResource("TileSetAtlasSource_emcp4")
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_75vob"]
+texture = ExtResource("5_rjysx")
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+6:3/0 = 0
+7:3/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+10:7/0 = 0
+11:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+11:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+10:9/0 = 0
+11:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+10:10/0 = 0
+11:10/0 = 0
+0:11/0 = 0
+1:11/0 = 0
+2:11/0 = 0
+3:11/0 = 0
+4:11/0 = 0
+5:11/0 = 0
+6:11/0 = 0
+7:11/0 = 0
+8:11/0 = 0
+9:11/0 = 0
+10:11/0 = 0
+11:11/0 = 0
+0:12/0 = 0
+1:12/0 = 0
+2:12/0 = 0
+4:12/0 = 0
+5:12/0 = 0
+7:12/0 = 0
+8:12/0 = 0
+10:12/0 = 0
+11:12/0 = 0
+0:13/0 = 0
+1:13/0 = 0
+2:13/0 = 0
+3:13/0 = 0
+4:13/0 = 0
+5:13/0 = 0
+6:13/0 = 0
+7:13/0 = 0
+10:13/0 = 0
+11:13/0 = 0
+0:14/0 = 0
+1:14/0 = 0
+2:14/0 = 0
+3:14/0 = 0
+4:14/0 = 0
+5:14/0 = 0
+6:14/0 = 0
+10:14/0 = 0
+11:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+4:15/0 = 0
+5:15/0 = 0
+6:15/0 = 0
+7:15/0 = 0
+10:15/0 = 0
+11:15/0 = 0
+0:16/0 = 0
+1:16/0 = 0
+2:16/0 = 0
+3:16/0 = 0
+4:16/0 = 0
+5:16/0 = 0
+6:16/0 = 0
+10:16/0 = 0
+11:16/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_ek21e"]
+sources/0 = SubResource("TileSetAtlasSource_75vob")
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qlig8"]
 size = Vector2(24, 18)
 
@@ -743,16 +900,20 @@ size = Vector2(15.875, 6.5)
 size = Vector2(51, 7.125)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rjysx"]
-size = Vector2(6, 97)
+size = Vector2(5, 118)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_75vob"]
-size = Vector2(8, 8)
+size = Vector2(19, 5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ek21e"]
-size = Vector2(104, 5)
+size = Vector2(112.5, 5.25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1g4wj"]
-size = Vector2(139, 7)
+size = Vector2(158, 4.75)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_rjysx"]
+radius = 3.0
+height = 16.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sf0on"]
 atlas = ExtResource("4_7cuts")
@@ -1128,8 +1289,12 @@ tile_set = SubResource("TileSet_emcp4")
 
 [node name="plantas2" type="TileMapLayer" parent="cenário_grama"]
 position = Vector2(58, 17)
-tile_map_data = PackedByteArray("AAAYABkAAAABAAEAAAAbABQAAAABAAEAAAAZAAwAAAABAAEAAAAcAAoAAAABAAEAAAAbAAUAAAABAAEAAAAjAAUAAAABAAEAAAAlAAIAAAABAAEAAAApAAIAAAABAAEAAAASAAMAAAABAAEAAAAPAAcAAAABAAEAAAARAAoAAAABAAEAAAALAAIAAAABAAEAAAAJAAoAAAABAAEAAAADAAUAAAABAAEAAAAEAAMAAAABAAEAAAA2AAQAAAABAAIAAAAxAAYAAAABAAIAAAAlABAAAAABAAIAAAAhABAAAAABAAIAAAAYAA8AAAABAAIAAAAWABEAAAABAAIAAAAQAA0AAAABAAIAAAAJABIAAAABAAIAAAAUABYAAAABAAIAAAAOAA4AAAABAAIAAAAGAA4AAAABAAIAAAAsABgAAAAGAA0AAAAtABgAAAAGAA0AAAAuABgAAAAGAA0AAAAvABgAAAAGAA0AAAArABgAAAAGAA0AAAAwABgAAAAGAA0AAAAqABgAAAAFAA0AAAAqABcAAAAFAA0AAAAqABYAAAAFAA0AAAAqABQAAAAFAA0AAAAqABMAAAAFAA0AAAAqABIAAAAFAAwAAAArABIAAAAGAAwAAAAsABIAAAAGAAwAAAAtABIAAAAGAAwAAAAuABIAAAAGAAwAAAAvABIAAAAGAAwAAAAwABIAAAAGAAwAAAAwABMAAAAGAA0AAAAwABQAAAAGAA0AAAAwABUAAAAGAA0AAAAwABYAAAAGAA0AAAAwABcAAAAGAA0AAAArABMAAAAGAA0AAAAsABMAAAAGAA0AAAAtABMAAAAGAA0AAAAuABMAAAAGAA0AAAAvABMAAAAGAA0AAAAvABQAAAAGAA0AAAAvABUAAAAGAA0AAAAvABYAAAAGAA0AAAAvABcAAAAGAA0AAAAuABcAAAAGAA0AAAAtABcAAAAGAA0AAAAsABcAAAAGAA0AAAArABcAAAAGAA0AAAArABYAAAAGAA0AAAArABUAAAAGAA0AAAArABQAAAAGAA0AAAAsABQAAAAGAA0AAAAsABUAAAAGAA0AAAAsABYAAAAGAA0AAAAtABQAAAAGAA0AAAAuABUAAAAGAA0AAAAuABQAAAAGAA0AAAAtABUAAAAGAA0AAAAtABYAAAAGAA0AAAAuABYAAAAGAA0AAAAqABUAAAAFAA0AAAAhAAwAAAAGAAgAAAAqABkAAAAFAA0AAAArABkAAAAGAA0AAAAsABkAAAAGAA0AAAAtABkAAAAGAA0AAAAuABkAAAAGAA0AAAAvABkAAAAGAA0AAAAwABkAAAAGAA0AAAArABoAAAAGAA4AAAAsABoAAAAGAA4AAAAtABoAAAAGAA4AAAAuABoAAAAGAA4AAAAvABoAAAAGAA4AAAAwABoAAAAGAA4AAAAqABoAAAAFAA4AAAAxABoAAAAHAA4AAAAxABkAAAAHAA0AAAAxABgAAAAHAA0AAAAxABcAAAAHAA0AAAAxABYAAAAHAA0AAAAxABUAAAAHAA0AAAAxABQAAAAHAA0AAAAxABMAAAAHAA0AAAAxABIAAAAHAAwAAAA=")
+tile_map_data = PackedByteArray("AAAYABkAAAAGAA0AAAAbABQAAAAGAA0AAAAZAAwAAAABAAEAAAAcAAoAAAABAAEAAAAbAAUAAAABAAEAAAAjAAUAAAABAAEAAAAlAAIAAAABAAEAAAApAAIAAAABAAEAAAASAAMAAAABAAEAAAAPAAcAAAABAAEAAAARAAoAAAABAAEAAAALAAIAAAABAAEAAAAJAAoAAAABAAEAAAADAAUAAAABAAEAAAAEAAMAAAABAAEAAAA2AAQAAAABAAIAAAAxAAYAAAABAAIAAAAlABAAAAABAAIAAAAhABAAAAABAAIAAAAYAA8AAAABAAIAAAAWABEAAAABAAIAAAAQAA0AAAABAAIAAAAJABIAAAABAAIAAAAUABYAAAABAAIAAAAOAA4AAAABAAIAAAAGAA4AAAABAAIAAAAsABgAAAAGAA0AAAAtABgAAAAGAA0AAAAuABgAAAAGAA0AAAAvABgAAAAGAA0AAAArABgAAAAGAA0AAAAwABgAAAAGAA0AAAAqABgAAAAFAA0AAAAqABcAAAAFAA0AAAAqABYAAAAFAA0AAAAqABQAAAAFAA0AAAAqABMAAAAFAA0AAAAqABIAAAAFAAwAAAArABIAAAAGAAwAAAAsABIAAAAGAAwAAAAtABIAAAAGAAwAAAAuABIAAAAGAAwAAAAvABIAAAAGAAwAAAAwABIAAAAGAAwAAAAwABMAAAAGAA0AAAAwABQAAAAGAA0AAAAwABUAAAAGAA0AAAAwABYAAAAGAA0AAAAwABcAAAAGAA0AAAArABMAAAAGAA0AAAAsABMAAAAGAA0AAAAtABMAAAAGAA0AAAAuABMAAAAGAA0AAAAvABMAAAAGAA0AAAAvABQAAAAGAA0AAAAvABUAAAAGAA0AAAAvABYAAAAGAA0AAAAvABcAAAAGAA0AAAAuABcAAAAGAA0AAAAtABcAAAAGAA0AAAAsABcAAAAGAA0AAAArABcAAAAGAA0AAAArABYAAAAGAA0AAAArABUAAAAGAA0AAAArABQAAAAGAA0AAAAsABQAAAAGAA0AAAAsABUAAAAGAA0AAAAsABYAAAAGAA0AAAAtABQAAAAGAA0AAAAuABUAAAAGAA0AAAAuABQAAAAGAA0AAAAtABUAAAAGAA0AAAAtABYAAAAGAA0AAAAuABYAAAAGAA0AAAAqABUAAAAFAA0AAAAhAAwAAAAGAAgAAAAqABkAAAAFAA0AAAArABkAAAAGAA0AAAAsABkAAAAGAA0AAAAtABkAAAAGAA0AAAAuABkAAAAGAA0AAAAvABkAAAAGAA0AAAAwABkAAAAGAA0AAAArABoAAAAGAA4AAAAsABoAAAAGAA4AAAAtABoAAAAGAA4AAAAuABoAAAAGAA4AAAAvABoAAAAGAA4AAAAwABoAAAAGAA4AAAAqABoAAAAFAA4AAAAxABoAAAAHAA4AAAAxABkAAAAHAA0AAAAxABgAAAAHAA0AAAAxABcAAAAHAA0AAAAxABYAAAAHAA0AAAAxABUAAAAHAA0AAAAxABQAAAAHAA0AAAAxABMAAAAHAA0AAAAxABIAAAAHAAwAAAAdABkAAAAGAA0AAAAcABkAAAAGAA0AAAAbABkAAAAGAA0AAAAaABkAAAAGAA0AAAAZABkAAAAGAA0AAAAdABgAAAAGAA0AAAAcABgAAAAGAA0AAAAbABgAAAAGAA0AAAAaABgAAAAGAA0AAAAZABgAAAAGAA0AAAAYABgAAAAGAA0AAAAYABcAAAAGAA0AAAAYABYAAAAGAA0AAAAYABUAAAAGAA0AAAAYABQAAAAGAA0AAAAYABMAAAAGAA0AAAAZABMAAAAGAA0AAAAaABMAAAAGAA0AAAAbABMAAAAGAA0AAAAcABMAAAAGAA0AAAAdABMAAAAGAA0AAAAdABQAAAAGAA0AAAAdABUAAAAGAA0AAAAdABYAAAAGAA0AAAAdABcAAAAGAA0AAAAcABcAAAAGAA0AAAAbABcAAAAGAA0AAAAaABcAAAAGAA0AAAAaABYAAAAGAA0AAAAZABUAAAAGAA0AAAAZABQAAAAGAA0AAAAaABQAAAAGAA0AAAAcABQAAAAGAA0AAAAcABUAAAAGAA0AAAAbABUAAAAGAA0AAAAaABUAAAAGAA0AAAAbABYAAAAGAA0AAAAcABYAAAAGAA0AAAAZABcAAAAGAA0AAAAZABYAAAAGAA0AAAAeABIAAAAHAAwAAAAXABIAAAAFAAwAAAAeABoAAAAHAA4AAAAXABoAAAAFAA4AAAAXABkAAAAFAA0AAAAXABgAAAAFAA0AAAAXABcAAAAFAA0AAAAXABYAAAAFAA0AAAAXABUAAAAFAA0AAAAXABQAAAAFAA0AAAAXABMAAAAFAA0AAAAYABIAAAAGAAwAAAAZABIAAAAGAAwAAAAaABIAAAAGAAwAAAAbABIAAAAGAAwAAAAcABIAAAAGAAwAAAAdABIAAAAGAAwAAAAeABMAAAAHAA0AAAAeABQAAAAHAA0AAAAeABUAAAAHAA0AAAAeABYAAAAHAA0AAAAeABcAAAAHAA0AAAAeABgAAAAHAA0AAAAeABkAAAAHAA0AAAAdABoAAAAGAA4AAAAcABoAAAAGAA4AAAAbABoAAAAGAA4AAAAaABoAAAAGAA4AAAAZABoAAAAGAA4AAAAYABoAAAAGAA4AAAA=")
 tile_set = SubResource("TileSet_ep5lw")
+
+[node name="coisasdocenario" type="TileMapLayer" parent="cenário_grama"]
+tile_map_data = PackedByteArray("AAA9AAYAAAAKAA8AAAA9AAcAAAAKABAAAAA+AAYAAAALAA8AAAA+AAcAAAALABAAAAA2AAQAAAAKAA8AAAA2AAUAAAAKABAAAAA3AAQAAAALAA8AAAA3AAUAAAALABAAAABCAA8AAAAKAA8AAABCABAAAAAKABAAAABDAA8AAAALAA8AAABDABAAAAALABAAAAA3ABwAAAAKAA8AAAA3AB0AAAAKABAAAAA4ABwAAAALAA8AAAA4AB0AAAALABAAAAAcAAoAAAAKAA8AAAAcAAsAAAAKABAAAAAdAAoAAAALAA8AAAAdAAsAAAALABAAAAANAAcAAAAKAA8AAAANAAgAAAAKABAAAAAOAAcAAAALAA8AAAAOAAgAAAALABAAAAANABkAAAAKAA8AAAANABoAAAAKABAAAAAOABkAAAALAA8AAAAOABoAAAALABAAAAAZABwAAAAKAA8AAAAZAB0AAAAKABAAAAAaABwAAAALAA8AAAAaAB0AAAALABAAAAAzAAwAAAAHAA0AAAA1AAwAAAAGAA0AAAAsAA4AAAACAAoAAAAsAA8AAAACAAsAAAA=")
+tile_set = SubResource("TileSet_ek21e")
 
 [node name="fazendeiro" parent="." instance=ExtResource("2_m7tbw")]
 position = Vector2(683, 189)
@@ -1241,11 +1406,6 @@ z_index = 2
 position = Vector2(334, 398)
 shape = SubResource("CircleShape2D_sf0on")
 
-[node name="CollisionArbustoPP7" type="CollisionShape2D" parent="Paredes do Mapa"]
-z_index = 2
-position = Vector2(1032, 424)
-shape = SubResource("CircleShape2D_sf0on")
-
 [node name="CollisionArbustoPP8" type="CollisionShape2D" parent="Paredes do Mapa"]
 z_index = 2
 position = Vector2(942, 29)
@@ -1274,24 +1434,28 @@ position = Vector2(922, 181)
 shape = SubResource("RectangleShape2D_ynwup")
 
 [node name="celagrandeesquerdo" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(848, 345.5)
+position = Vector2(847.5, 342)
 shape = SubResource("RectangleShape2D_rjysx")
 
 [node name="celagrandeesquerdo2" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(1001, 342)
+position = Vector2(1000, 343.5)
 shape = SubResource("RectangleShape2D_rjysx")
 
 [node name="celagrandepeqquenacima" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(854, 289)
+position = Vector2(855, 285.5)
 shape = SubResource("RectangleShape2D_75vob")
 
 [node name="celagrandecima" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(946, 290.5)
+position = Vector2(945.75, 285.625)
 shape = SubResource("RectangleShape2D_ek21e")
 
 [node name="cela grande" type="CollisionShape2D" parent="Paredes do Mapa"]
-position = Vector2(925.5, 402)
+position = Vector2(924, 398.625)
 shape = SubResource("RectangleShape2D_1g4wj")
+
+[node name="placa" type="CollisionShape2D" parent="Paredes do Mapa"]
+position = Vector2(653, 209)
+shape = SubResource("CapsuleShape2D_rjysx")
 
 [node name="planta de agua" type="Node" parent="."]
 
@@ -1356,9 +1520,9 @@ script = ExtResource("10_sf0on")
 
 [node name="atalhos" type="Label" parent="segura_informacoes"]
 offset_left = 13.0
-offset_top = 476.0
-offset_right = 261.0
-offset_bottom = 662.0
+offset_top = 458.0
+offset_right = 266.0
+offset_bottom = 665.0
 theme_override_colors/font_color = Color(0.12225223, 0.12225223, 0.12225223, 1)
 theme_override_font_sizes/font_size = 13
 text = "Instruções:
@@ -1367,7 +1531,8 @@ balde próximo ao balde de água
 M - plantar milho 
 N - plantar laranjas
 B - plantar morangos
-C -  colher
+V-  plantar berinjelas
+C - colher
 Q- vender vegetais e frutas no mercador
 "
 script = ExtResource("8_sf0on")
@@ -1497,7 +1662,7 @@ position = Vector2(39, 5)
 position = Vector2(1, 30)
 
 [node name="Area2D" parent="Node" instance=ExtResource("13_xe7g3")]
-position = Vector2(968, 294)
+position = Vector2(968, 292)
 
 [node name="vaquinha3" parent="Node" instance=ExtResource("16_cxgpi")]
 position = Vector2(995, 434)
@@ -1538,7 +1703,11 @@ position = Vector2(957, 387)
 [node name="terra_plantio" type="Area2D" parent="."]
 position = Vector2(735, 356)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="terra_plantio"]
+[node name="area de plantar 1" type="CollisionShape2D" parent="terra_plantio"]
+shape = SubResource("RectangleShape2D_5jtgv")
+
+[node name="area de plantar 2" type="CollisionShape2D" parent="terra_plantio"]
+position = Vector2(-303, 1)
 shape = SubResource("RectangleShape2D_5jtgv")
 
 [connection signal="body_entered" from="sementes" to="fazendeiro" method="_on_sementes_body_entered"]

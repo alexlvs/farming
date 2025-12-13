@@ -13,6 +13,20 @@ var total_frutas:
 		return morango + laranja
 var terra_plantio = "nao"
 
+var precos := {
+	"milho": 6,
+	"berinjela": 8,
+	"morango": 12,
+	"laranja": 10
+}
+
+func vender(item: String) -> bool:
+	if get(item) > 0:
+		set(item, get(item) - 1)
+		dinheiro += precos[item]
+		return true
+	return false
+
 func _ready() -> void:
 	pass 
 	

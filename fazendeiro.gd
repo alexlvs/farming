@@ -38,29 +38,19 @@ func _physics_process(delta: float) -> void:
 		elif direction.x < 0:
 			$AnimatedSprite2D.play("andando_tras")
 			
-	if  Input.is_action_just_released("vender") and Dados.milho >=1    and pode_vender == "sim":
-		print("vender")
-		if Dados.milho > 0:
-			Dados.milho -= 1
-		else:
-			Dados.berinjela -=1
-		Dados.dinheiro += 6
-		
-			
-		
-	if Input.is_action_just_released("vender") and Dados.total_frutas >= 1 and pode_vender == "sim":
-		print("vender")
-	
-		if Dados.morango > 0:
-			Dados.morango -= 1
-		else:
-			Dados.laranja -= 1
+	if Input.is_action_just_released("vender") and pode_vender == "sim":
 
-		Dados.dinheiro += 12
+		if Dados.vender("milho"):
+			print("Vendeu milho")
 
-		
-			
-	
+		elif Dados.vender("berinjela"):
+			print("Vendeu berinjela")
+
+		elif Dados.vender("morango"):
+			print("Vendeu morango")
+
+		elif Dados.vender("laranja"):
+			print("Vendeu laranja")
 
 	
 func _on_sementes_body_entered(body: Node2D) -> void:
