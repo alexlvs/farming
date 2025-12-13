@@ -21,7 +21,7 @@ func _process(delta: float) -> void:
 	$"../segura_informacoes/semente".text = str("Sementes: " ,Dados.semente)
 	
 	if terra == "sim" and ja_tem_planta == "nao" :
-		if Dados.semente >=1 and Input.is_action_just_pressed("ui_accept"):
+		if Dados.semente >=1 and Input.is_action_just_pressed("tomate"):
 			show()
 			ja_tem_planta = "sim"
 			Dados.semente -=1

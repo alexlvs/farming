@@ -40,8 +40,13 @@ func _physics_process(delta: float) -> void:
 			
 	if  Input.is_action_just_released("vender") and Dados.milho >=1    and pode_vender == "sim":
 		print("vender")
-		Dados.milho -= 1
-		Dados.dinheiro +=5
+		if Dados.milho > 0:
+			Dados.milho -= 1
+		else:
+			Dados.berinjela -=1
+		Dados.dinheiro += 6
+		
+			
 		
 	if Input.is_action_just_released("vender") and Dados.total_frutas >= 1 and pode_vender == "sim":
 		print("vender")
@@ -88,3 +93,11 @@ func _on_npc_venda_body_exited(body: Node2D) -> void:
 func _on_porta_saida_body_entered(body: Node2D) -> void:
 	if body == self:
 		get_tree().change_scene_to_file("res://principal.tscn")
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	Dados.terra_plantio ="sim"
+
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	Dados.terra_plantio = "nao"

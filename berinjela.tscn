@@ -1,0 +1,69 @@
+[gd_scene load_steps=11 format=3 uid="uid://btqooiap8tsnb"]
+
+[ext_resource type="Texture2D" uid="uid://ww28rvdihbao" path="res://fotos/Crop_Spritesheet.png" id="1_da123"]
+[ext_resource type="Script" uid="uid://jl3ccquo7fcr" path="res://berinjela.gd" id="1_rwy7i"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rwy7i"]
+atlas = ExtResource("1_da123")
+region = Rect2(80, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cl8na"]
+atlas = ExtResource("1_da123")
+region = Rect2(64, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1g57y"]
+atlas = ExtResource("1_da123")
+region = Rect2(48, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5yew"]
+atlas = ExtResource("1_da123")
+region = Rect2(32, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgpmx"]
+atlas = ExtResource("1_da123")
+region = Rect2(16, 48, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s15ca"]
+atlas = ExtResource("1_da123")
+region = Rect2(0, 48, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_77ilf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rwy7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cl8na")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1g57y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5yew")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgpmx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s15ca")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6mllm"]
+size = Vector2(17, 15)
+
+[node name="berinjela" type="Area2D"]
+script = ExtResource("1_rwy7i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_77ilf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6mllm")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=84 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=85 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://io45femojtbk" path="res://principal.gd" id="1_vwsrf"]
@@ -1109,6 +1109,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xe7g3"]
 size = Vector2(365.5, 101)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5jtgv"]
+size = Vector2(110, 129)
+
 [node name="Principal" type="Node2D"]
 position = Vector2(83, 74)
 script = ExtResource("1_vwsrf")
@@ -1352,18 +1355,20 @@ text = "Dinheiro"
 script = ExtResource("10_sf0on")
 
 [node name="atalhos" type="Label" parent="segura_informacoes"]
-offset_left = 5.0
-offset_top = 508.0
-offset_right = 253.0
-offset_bottom = 652.0
+offset_left = 13.0
+offset_top = 476.0
+offset_right = 261.0
+offset_bottom = 662.0
 theme_override_colors/font_color = Color(0.12225223, 0.12225223, 0.12225223, 1)
 theme_override_font_sizes/font_size = 13
-text = "instruções:
-pegue as sementes no 
+text = "Instruções:
+Pegue as sementes no 
 balde próximo ao balde de água
 M - plantar milho 
+N - plantar laranjas
+B - plantar morangos
 C -  colher
-Q- vender vegetais no mercador
+Q- vender vegetais e frutas no mercador
 "
 script = ExtResource("8_sf0on")
 
@@ -1423,8 +1428,8 @@ position = Vector2(659, 257)
 shape = SubResource("RectangleShape2D_iuule")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Npc_venda"]
-position = Vector2(683, 222)
-scale = Vector2(1.6874444, 1.7743703)
+position = Vector2(684.9991, 225.69498)
+scale = Vector2(1.6249725, 1.5434346)
 sprite_frames = SubResource("SpriteFrames_a20yj")
 animation = &"balao_npc"
 autoplay = "balao_npc"
@@ -1530,7 +1535,15 @@ position = Vector2(1049, 439)
 [node name="vaquinha" parent="Node" instance=ExtResource("16_cxgpi")]
 position = Vector2(957, 387)
 
+[node name="terra_plantio" type="Area2D" parent="."]
+position = Vector2(735, 356)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="terra_plantio"]
+shape = SubResource("RectangleShape2D_5jtgv")
+
 [connection signal="body_entered" from="sementes" to="fazendeiro" method="_on_sementes_body_entered"]
 [connection signal="body_entered" from="Npc_venda" to="fazendeiro" method="_on_npc_venda_body_entered"]
 [connection signal="body_exited" from="Npc_venda" to="fazendeiro" method="_on_npc_venda_body_exited"]
 [connection signal="body_entered" from="porta_casa" to="fazendeiro" method="_on_porta_casa_body_entered"]
+[connection signal="body_entered" from="terra_plantio" to="fazendeiro" method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="terra_plantio" to="fazendeiro" method="_on_area_2d_body_exited"]
