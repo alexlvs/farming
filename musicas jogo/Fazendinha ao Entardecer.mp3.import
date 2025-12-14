@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://o4o5phhspn7f"
+path="res://.godot/imported/Fazendinha ao Entardecer.mp3-cf75ccb5d0f5696aceac173e60ff9986.mp3str"
+
+[deps]
+
+source_file="res://musicas jogo/Fazendinha ao Entardecer.mp3"
+dest_files=["res://.godot/imported/Fazendinha ao Entardecer.mp3-cf75ccb5d0f5696aceac173e60ff9986.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -20,11 +20,11 @@ func _ready() -> void:
 			$AnimatedSprite2D.frame = 1
 			await get_tree().create_timer(3,0).timeout
 			$AnimatedSprite2D.frame = 2
-			await get_tree().create_timer(4,0).timeout
+			await get_tree().create_timer(3,0).timeout
 			$AnimatedSprite2D.frame = 3
-			await get_tree().create_timer(5,0).timeout
+			await get_tree().create_timer(3,0).timeout
 			$AnimatedSprite2D.frame = 4
-			await get_tree().create_timer(6,0).timeout
+			await get_tree().create_timer(3,0).timeout
 			$AnimatedSprite2D.frame = 5
 			pode_colher = "sim"
 	

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b1oo78yb28h7w"
+path="res://.godot/imported/Sonic-Ring-Sound.mp3-f69d8c8a5355b99d1f5eed555402aa6c.mp3str"
+
+[deps]
+
+source_file="res://musicas jogo/Sonic-Ring-Sound.mp3"
+dest_files=["res://.godot/imported/Sonic-Ring-Sound.mp3-f69d8c8a5355b99d1f5eed555402aa6c.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

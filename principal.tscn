@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=93 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://io45femojtbk" path="res://principal.gd" id="1_vwsrf"]
@@ -18,6 +18,10 @@
 [ext_resource type="PackedScene" uid="uid://cie2oc05yp63j" path="res://pinto.tscn" id="14_iuule"]
 [ext_resource type="PackedScene" uid="uid://dwh4yo68wlboy" path="res://vaquinha.tscn" id="16_cxgpi"]
 [ext_resource type="PackedScene" uid="uid://cvrq40016xf8" path="res://bizerro.tscn" id="17_ynwup"]
+[ext_resource type="AudioStream" uid="uid://o4o5phhspn7f" path="res://musicas jogo/Fazendinha ao Entardecer.mp3" id="19_75vob"]
+[ext_resource type="AudioStream" uid="uid://bf3f654sl8cyg" path="res://musicas jogo/Fazendinha Interior.mp3" id="19_ek21e"]
+[ext_resource type="AudioStream" uid="uid://dhdprldpdsren" path="res://musicas jogo/sand-effect-254993.mp3" id="20_1g4wj"]
+[ext_resource type="AudioStream" uid="uid://b1oo78yb28h7w" path="res://musicas jogo/Sonic-Ring-Sound.mp3" id="20_5jtgv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7cuts"]
 texture = ExtResource("3_rrtif")
@@ -873,7 +877,7 @@ radius = 17.0
 height = 672.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vwsrf"]
-size = Vector2(132, 82)
+size = Vector2(145, 110)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xrbya"]
 size = Vector2(17, 25.71875)
@@ -1329,7 +1333,7 @@ shape = SubResource("CapsuleShape2D_ep5lw")
 
 [node name="colisorRio" type="CollisionShape2D" parent="Paredes do Mapa"]
 z_index = 1
-position = Vector2(549, 172)
+position = Vector2(552.5, 168)
 shape = SubResource("RectangleShape2D_vwsrf")
 
 [node name="ColidoArvorefina" type="CollisionShape2D" parent="Paredes do Mapa"]
@@ -1538,7 +1542,7 @@ Q- vender vegetais e frutas no mercador
 script = ExtResource("8_sf0on")
 
 [node name="sementes" type="Area2D" parent="."]
-position = Vector2(36, 28)
+position = Vector2(34, 23)
 monitorable = false
 script = ExtResource("5_ep5lw")
 
@@ -1623,7 +1627,7 @@ shape = SubResource("RectangleShape2D_xe7g3")
 position = Vector2(960, 278)
 
 [node name="galinha2" parent="Node" instance=ExtResource("13_xe7g3")]
-position = Vector2(971, 319)
+position = Vector2(970, 316)
 
 [node name="galinha3" parent="Node" instance=ExtResource("13_xe7g3")]
 position = Vector2(1003, 297)
@@ -1674,7 +1678,7 @@ position = Vector2(958, 421)
 position = Vector2(1061, 383)
 
 [node name="bizerro" parent="Node/vaquinha6" instance=ExtResource("17_ynwup")]
-position = Vector2(-2, 19)
+position = Vector2(7, 27)
 
 [node name="bizerro2" parent="Node/vaquinha6" instance=ExtResource("17_ynwup")]
 position = Vector2(-39, 51)
@@ -1709,6 +1713,23 @@ shape = SubResource("RectangleShape2D_5jtgv")
 [node name="area de plantar 2" type="CollisionShape2D" parent="terra_plantio"]
 position = Vector2(-303, 1)
 shape = SubResource("RectangleShape2D_5jtgv")
+
+[node name="musica_interior" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_ek21e")
+volume_db = 6.845
+
+[node name="venda" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_5jtgv")
+volume_db = -3.216
+
+[node name="plantar" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_1g4wj")
+volume_db = 18.227
+
+[node name="musica_principal" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_75vob")
+volume_db = -0.165
+panning_strength = 0.04
 
 [connection signal="body_entered" from="sementes" to="fazendeiro" method="_on_sementes_body_entered"]
 [connection signal="body_entered" from="Npc_venda" to="fazendeiro" method="_on_npc_venda_body_entered"]

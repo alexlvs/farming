@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bf3f654sl8cyg"
+path="res://.godot/imported/Fazendinha Interior.mp3-fd97c85f3a099df00cf59df0e81aa99f.mp3str"
+
+[deps]
+
+source_file="res://musicas jogo/Fazendinha Interior.mp3"
+dest_files=["res://.godot/imported/Fazendinha Interior.mp3-fd97c85f3a099df00cf59df0e81aa99f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
