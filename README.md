@@ -2,11 +2,10 @@
 Métodos Formais de Engenharia de Software
 
 O presente trabalho apresenta o desenvolvimento de um jogo digital de simulação agrícola, construído com o motor de jogos Godot Engine. O 
-projeto tem como objetivo proporcionar ao jogador uma experiência lúdica e interativa de cultivo, colheita e gerenciamento de recursos em um 
-ambiente virtual simples, reforçando conceitos de planejamento, organização e tomada de decisão. 
+projeto tem como objetivo proporcionar ao jogador uma experiência lúdica e interativa de cultivo, colheita e gerenciamento de recursos em um ambiente virtual simples, reforçando conceitos de planejamento, organização e tomada de decisão. 
 
 Fase de desenvolvimento:
-O jogo ainda não foi desenvolvido completamente, mas já é possível realizar algumas ações e jogar um pouco.
+O jogo foi concluído, sendo possível plantar dentro do campo destinado a plantação, 6itens diferentes, sendo eles 3 tipos de frutas e 3 tipos de vegetais 
 
 ações:
 
@@ -25,7 +24,7 @@ Personagens desenvolvidos:
 
 No canto superior é possível vizualizar os vegetais e o dinheiro que recebe com a venda dos vegetais.
 
-# ODS - 2 FOME ZERO E AGRICULTURA SUSTENTÁVEL e  ODS 15 – VIDA TERRESTRE
+# ODS - 2 FOME ZERO E AGRICULTURA SUSTENTÁVEL 
 - No começo, o jogador planta para sobreviver.
 - O jogador planta a semente e tem que esperar ela crescer para poder colher, mostra que a agricultura é um ciclo e precisa ser respeitado.
 - O jogador planta sementes, cuida das plantas e colhe alimentos. Isso mostra o ciclo básico da agricultura, essencial para acabar com a fome.
