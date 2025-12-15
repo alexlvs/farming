@@ -5,7 +5,7 @@ O presente trabalho apresenta o desenvolvimento de um jogo digital de simulaçã
 projeto tem como objetivo proporcionar ao jogador uma experiência lúdica e interativa de cultivo, colheita e gerenciamento de recursos em um ambiente virtual simples, reforçando conceitos de planejamento, organização e tomada de decisão. 
 
 Fase de desenvolvimento:
-O jogo foi concluído, sendo possível plantar dentro do campo destinado a plantação, 6itens diferentes, sendo eles 3 tipos de frutas e 3 tipos de vegetais 
+O jogo foi concluído, sendo possível plantar dentro do campo destinado a plantação, 6itens diferentes, sendo eles 3 tipos de frutas(abacaxi, laranja e morango) e 3 tipos de vegetais(berinjela, batata e milho). Também é possível entrar na casa, ir até o cercado das galinhas e o dos bizerros.
 
 ações:
 
