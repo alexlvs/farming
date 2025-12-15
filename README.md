@@ -10,6 +10,9 @@ O jogo foi concluído, sendo possível plantar dentro do campo destinado a plant
 ações:
 
 - Plantar milho, usando a letra M;
+- Plantar batata usando a letra X;
+- Plantar berinjela usando a letra V;
+- Plantar abacaxi usando a letra z;
 - plantar morango usando a letra B;
 - plantar laranjas usando a letra N;
   
@@ -20,9 +23,9 @@ ações:
 Personagens desenvolvidos:
 
 - O fazendeiro
-- O comprador
+- O comprador, esse pergunta se o fazendeiro quer vender algo quando ele chega perto.
 
-No canto superior é possível vizualizar os vegetais e o dinheiro que recebe com a venda dos vegetais.
+No canto superior é possível vizualizar a quantidade de semente que você pegou no balde, a quantidade de vegetal e fruta que você colheu e o dinheiro que recebe com a venda dos produtos.
 
 # ODS - 2 FOME ZERO E AGRICULTURA SUSTENTÁVEL 
 - No começo, o jogador planta para sobreviver.
