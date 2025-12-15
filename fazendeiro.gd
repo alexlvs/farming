@@ -77,6 +77,7 @@ func _on_porta_casa_body_entered(body: Node2D) -> void:
 
 func _on_npc_venda_body_entered(body: Node2D) -> void:
 	pode_vender = "sim"
+	$"../NPC".play()
 	
 	
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dkl2sagl3xf7c"
+path="res://.godot/imported/planta.mp3-8095d1aef373f842243b8469ecbbd4f1.mp3str"
+
+[deps]
+
+source_file="res://musicas jogo/planta.mp3"
+dest_files=["res://.godot/imported/planta.mp3-8095d1aef373f842243b8469ecbbd4f1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

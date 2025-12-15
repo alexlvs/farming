@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=4 uid="uid://c1xue3f2xl8ub"]
+[gd_scene load_steps=94 format=4 uid="uid://c1xue3f2xl8ub"]
 
 [ext_resource type="PackedScene" uid="uid://d2xsjbi0gfjdp" path="res://cenário_grama.tscn" id="1_tr6oq"]
 [ext_resource type="Script" uid="uid://io45femojtbk" path="res://principal.gd" id="1_vwsrf"]
@@ -20,8 +20,9 @@
 [ext_resource type="PackedScene" uid="uid://cvrq40016xf8" path="res://bizerro.tscn" id="17_ynwup"]
 [ext_resource type="AudioStream" uid="uid://o4o5phhspn7f" path="res://musicas jogo/Fazendinha ao Entardecer.mp3" id="19_75vob"]
 [ext_resource type="AudioStream" uid="uid://bf3f654sl8cyg" path="res://musicas jogo/Fazendinha Interior.mp3" id="19_ek21e"]
-[ext_resource type="AudioStream" uid="uid://dhdprldpdsren" path="res://musicas jogo/sand-effect-254993.mp3" id="20_1g4wj"]
 [ext_resource type="AudioStream" uid="uid://b1oo78yb28h7w" path="res://musicas jogo/Sonic-Ring-Sound.mp3" id="20_5jtgv"]
+[ext_resource type="AudioStream" uid="uid://dkl2sagl3xf7c" path="res://musicas jogo/planta.mp3" id="21_m8wxu"]
+[ext_resource type="AudioStream" uid="uid://buiutbxpmh626" path="res://musicas jogo/NPC_venda.mp3" id="23_m8wxu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7cuts"]
 texture = ExtResource("3_rrtif")
@@ -1723,13 +1724,16 @@ stream = ExtResource("20_5jtgv")
 volume_db = -3.216
 
 [node name="plantar" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("20_1g4wj")
+stream = ExtResource("21_m8wxu")
 volume_db = 18.227
 
 [node name="musica_principal" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("19_75vob")
 volume_db = -0.165
 panning_strength = 0.04
+
+[node name="NPC" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("23_m8wxu")
 
 [connection signal="body_entered" from="sementes" to="fazendeiro" method="_on_sementes_body_entered"]
 [connection signal="body_entered" from="Npc_venda" to="fazendeiro" method="_on_npc_venda_body_entered"]
