@@ -44,4 +44,6 @@ No canto superior é possível vizualizar a quantidade de semente que você pego
 # PLANO PARA ESPECIFICAÇÃO FORMAL
 LINK(https://docs.google.com/document/d/1HSAzPctcLFDkGFSJ_cGiruchaLZiQZC5H1hpZHNV3oo/edit?usp=sharing);
 
+# ARTIGO
+[TERRAS_VERDES, JOGO_ELETRONICO.pdf](https://github.com/user-attachments/files/24174762/TERRAS_VERDES.JOGO_ELETRONICO.pdf)
 
