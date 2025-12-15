@@ -54,6 +54,13 @@ func _physics_process(delta: float) -> void:
 		elif Dados.vender("laranja"):
 			print("Vendeu laranja")
 			$"../venda".play()
+		elif Dados.vender("abacaxi"):
+			print("Vendeu abacaxi")
+			$"../venda".play()
+		elif Dados.vender("batata"):
+			print("Vendeu batata")
+			$"../venda".play()
+
 
 	
 func _on_sementes_body_entered(body: Node2D) -> void:

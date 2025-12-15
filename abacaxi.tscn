@@ -1,0 +1,72 @@
+[gd_scene load_steps=11 format=3 uid="uid://c4k0ixmqmfqjv"]
+
+[ext_resource type="Script" uid="uid://dmh7fs78ughj0" path="res://abacaxi.gd" id="1_e4g23"]
+[ext_resource type="Texture2D" uid="uid://ww28rvdihbao" path="res://fotos/Crop_Spritesheet.png" id="1_sx3ii"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e4g23"]
+atlas = ExtResource("1_sx3ii")
+region = Rect2(80, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_byla5"]
+atlas = ExtResource("1_sx3ii")
+region = Rect2(64, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_feh5y"]
+atlas = ExtResource("1_sx3ii")
+region = Rect2(48, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ismp"]
+atlas = ExtResource("1_sx3ii")
+region = Rect2(32, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jr3th"]
+atlas = ExtResource("1_sx3ii")
+region = Rect2(16, 64, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xu7dg"]
+atlas = ExtResource("1_sx3ii")
+region = Rect2(0, 64, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5i12l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e4g23")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_byla5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_feh5y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ismp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jr3th")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xu7dg")
+}],
+"loop": true,
+"name": &"abacaxi",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rvy1f"]
+size = Vector2(17, 14)
+
+[node name="abacaxi" type="Area2D"]
+script = ExtResource("1_e4g23")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5i12l")
+animation = &"abacaxi"
+frame_progress = 0.35856542
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0)
+shape = SubResource("RectangleShape2D_rvy1f")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

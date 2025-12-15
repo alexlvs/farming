@@ -3,7 +3,8 @@ var node = preload("res://milho.tscn")
 var morango = preload("res://morango.tscn")
 var laranja = preload("res://laranja.tscn")
 var berinjela = preload("res://berinjela.tscn")
-
+var abacaxi = preload("res://abacaxi.tscn")
+var batata = preload("res://batata.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
@@ -40,6 +41,19 @@ func _process(delta: float) -> void:
 		add_child(instanceeee)
 		Dados.semente -=1
 		$plantar.play()
+	if Input.is_action_just_released("abacaxi") and Dados.semente >=1  and Dados.terra_plantio == "sim" :
+		var instanceeeee = abacaxi.instantiate()
+		instanceeeee.position =$fazendeiro.position
+		add_child(instanceeeee)
+		Dados.semente -=1
+		$plantar.play()
+	if Input.is_action_just_released("batata") and Dados.semente >=1  and Dados.terra_plantio == "sim" :
+		var instanceeeeee = batata.instantiate()
+		instanceeeeee.position =$fazendeiro.position
+		add_child(instanceeeeee)
+		Dados.semente -=1
+		$plantar.play()
+		
 		
 	
 	

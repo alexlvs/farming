@@ -1538,6 +1538,8 @@ N - plantar laranjas
 B - plantar morangos
 V-  plantar berinjelas
 C - colher
+X-  plantar batata
+Z- plantar abacaxi
 Q- vender vegetais e frutas no mercador
 "
 script = ExtResource("8_sf0on")
